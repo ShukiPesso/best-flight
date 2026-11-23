@@ -3,7 +3,12 @@ name: Daily flight scan
 on:
   schedule:
     - cron: "30 3 * * *"   # every day 05:30/06:30 Israel time
-  workflow_dispatch: {}     # "Run workflow" button for a manual run
+  workflow_dispatch:        # "Run workflow" button for a manual run
+    inputs:
+      search_budget:
+        description: "Searches for this run only (empty = value from config.yaml)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -27,7 +32,8 @@ jobs:
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           DUFFEL_TOKEN: ${{ secrets.DUFFEL_TOKEN }}
-        run: python -m flightscan.scan
+          BUDGET: ${{ inputs.search_budget }}
+        run: python -m flightscan.scan ${BUDGET:+--search-budget "$BUDGET"}
       - name: Commit results
         run: |
           git config user.name "flight-scan-bot"

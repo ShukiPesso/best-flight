@@ -3,6 +3,7 @@ connections), so the price and baggage allowance are the airline's own."""
 from __future__ import annotations
 
 import datetime as dt
+import logging
 import os
 
 import requests
@@ -25,7 +26,13 @@ class DuffelProvider(Provider):
 
     @classmethod
     def available(cls) -> bool:
-        return bool(os.environ.get("DUFFEL_TOKEN"))
+        token = os.environ.get("DUFFEL_TOKEN", "")
+        if token.startswith("duffel_test_"):
+            # test mode returns made-up airlines and prices; never mix them in
+            logging.getLogger("flightscan").warning(
+                "DUFFEL_TOKEN is a test token (fake data) - Duffel skipped")
+            return False
+        return bool(token)
 
     def cost(self, origins):
         return len(origins)

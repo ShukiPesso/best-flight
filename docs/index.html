@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>דילים לטיסות</title>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#fff; --text:#17202a; --muted:#64707d; --line:#e3e7ec;
+  --accent:#0b63ce; --good:#147a3d; --warn:#a15c00; --bad:#b42318; --chip:#eef3fa;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0f1318; --card:#181e25; --text:#e8edf2; --muted:#93a0ad; --line:#2a333d;
+  --accent:#5aa2ff; --good:#4cc47a; --warn:#f0a948; --bad:#ff7a6e; --chip:#1f2a36;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+header{padding:20px 16px 8px;max-width:900px;margin:auto}
+h1{margin:0 0 4px;font-size:24px}
+.sub{color:var(--muted);font-size:13px}
+main{max-width:900px;margin:auto;padding:8px 16px 40px}
+.banner{background:#fff4e0;color:#6b4200;border:1px solid #f0c98a;border-radius:10px;padding:10px 12px;margin:10px 0}
+@media (prefers-color-scheme: dark){.banner{background:#3a2a10;color:#f6d7a4;border-color:#6b4f22}}
+.list{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;background:var(--card);
+  border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;text-align:start;color:inherit;font:inherit;width:100%}
+.row:hover{border-color:var(--accent)}
+.row .city{font-weight:600;font-size:17px}
+.row .country{color:var(--muted);font-size:13px}
+.price{font-weight:700;font-size:20px;white-space:nowrap}
+.price small{font-weight:400;color:var(--muted);font-size:12px;display:block;text-align:left}
+.days{background:var(--chip);border-radius:999px;padding:4px 10px;white-space:nowrap;font-size:14px}
+.none{opacity:.6;cursor:default}
+.badge{display:inline-block;font-size:11px;border-radius:6px;padding:1px 6px;margin-inline-start:6px;vertical-align:middle}
+.b-ok{background:#e3f5ea;color:var(--good)} .b-unv{background:#fff1dc;color:var(--warn)} .b-flex{background:#e8efff;color:var(--accent)}
+@media (prefers-color-scheme: dark){.b-ok{background:#163222}.b-unv{background:#3a2a10}.b-flex{background:#18284a}}
+dialog{border:none;border-radius:14px;padding:0;max-width:760px;width:calc(100% - 24px);background:var(--card);color:var(--text)}
+dialog::backdrop{background:rgba(0,0,0,.45)}
+.dhead{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--card)}
+.dhead h2{margin:0;font-size:20px}
+.x{background:none;border:none;font-size:24px;cursor:pointer;color:var(--muted)}
+.dbody{padding:12px 16px 18px}
+.opt{border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.opt-h{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:var(--chip);gap:8px;flex-wrap:wrap}
+.legs{display:grid;grid-template-columns:1fr 1fr;gap:0}
+@media (max-width:600px){.legs{grid-template-columns:1fr}.row{grid-template-columns:1fr auto}.row .days{grid-column:1/-1;justify-self:start}}
+.leg{padding:10px 12px;border-top:1px solid var(--line)}
+.leg + .leg{border-inline-start:1px solid var(--line)}
+@media (max-width:600px){.leg + .leg{border-inline-start:none}}
+.leg h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:600}
+.times{font-size:18px;font-weight:600;direction:ltr;text-align:right}
+.kv{color:var(--muted);font-size:13px}
+.bags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.bag{font-size:12px;border-radius:6px;padding:2px 7px;border:1px solid var(--line)}
+.bag.y{color:var(--good);border-color:currentColor}.bag.n{color:var(--bad);border-color:currentColor}.bag.u{color:var(--muted)}
+.foot{color:var(--muted);font-size:12px;margin-top:16px}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <h1>✈️ דילים לטיסות ישירות מישראל</h1>
+  <div class="sub" id="sub">טוען…</div>
+</header>
+<main>
+  <div id="banner"></div>
+  <div class="list" id="list"></div>
+  <div class="foot" id="foot"></div>
+</main>
+<dialog id="dlg"><div class="dhead"><h2 id="dtitle"></h2><button class="x" aria-label="סגירה" onclick="dlg.close()">×</button></div><div class="dbody" id="dbody"></div></dialog>
+<script>
+const DAYS=["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const AIRLINE_SITES={"LY":"https://www.elal.com","6H":"https://www.israir.co.il","IZ":"https://www.arkia.co.il",
+ "W6":"https://wizzair.com","W4":"https://wizzair.com","A3":"https://en.aegeanair.com","CY":"https://www.cyprusairways.com",
+ "BA":"https://www.britishairways.com","LH":"https://www.lufthansa.com","OS":"https://www.austrian.com","LX":"https://www.swiss.com",
+ "AF":"https://wwws.airfrance.co.il","KL":"https://www.klm.com","AZ":"https://www.ita-airways.com","IB":"https://www.iberia.com",
+ "VY":"https://www.vueling.com","TP":"https://www.flytap.com","LO":"https://www.lot.com","RO":"https://www.tarom.ro",
+ "FB":"https://www.air.bg","JU":"https://www.airserbia.com","OK":"https://www.csa.cz","FZ":"https://www.flydubai.com",
+ "EK":"https://www.emirates.com","EY":"https://www.etihad.com","TK":"https://www.turkishairlines.com","UA":"https://www.united.com",
+ "DL":"https://www.delta.com","AA":"https://www.aa.com","AC":"https://www.aircanada.com","U2":"https://www.easyjet.com",
+ "FR":"https://www.ryanair.com","BT":"https://www.airbaltic.com","A9":"https://www.georgian-airways.com"};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let DATA=null;
+const money=(n)=>"₪"+Math.round(n).toLocaleString("he-IL");
+const dur=m=>`${Math.floor(m/60)}:${String(m%60).padStart(2,"0")} ש'`;
+function dParts(s){const d=new Date(s.slice(0,10)+"T12:00:00");return {wd:DAYS[d.getDay()],dm:`${d.getDate()}.${d.getMonth()+1}`};}
+const hm=s=>s.slice(11,16);
+const fmtD=s=>{const [y,m,d]=s.split("-");return `${+d}.${+m}.${y.slice(2)}`};
+function daysLabel(t){return `${t.days} ימים · ${t.nights} לילות`}
+function bag(label,v){const c=v===true?"y":v===false?"n":"u";const s=v===true?"✓":v===false?"✗":"?";return `<span class="bag ${c}">${s} ${label}</span>`}
+function legHtml(title,l){
+  const a=dParts(l.dep_local), b=dParts(l.arr_local);
+  const site=AIRLINE_SITES[l.airline_code];
+  const fares=(l.fares||[]).length>1?`<div class="kv">תעריפים אצל החברה: ${l.fares.map(f=>esc(f.fare_name||"")+" "+money(f.price)).join(" · ")}</div>`:"";
+  return `<div class="leg"><h4>${title}</h4>
+   <div><b>יום ${a.wd} ${a.dm}</b>${b.dm!==a.dm?` <span class="kv">(נחיתה ${b.wd} ${b.dm})</span>`:""}</div>
+   <div class="times">${esc(l.dep)} ${hm(l.dep_local)} → ${esc(l.arr)} ${hm(l.arr_local)}</div>
+   <div class="kv">משך ${dur(l.duration_min)} · ${esc(l.airline)} ${esc(l.flight_numbers.join(", "))}${l.aircraft?" · "+esc(l.aircraft):""}</div>
+   <div class="kv">${money(l.price)} לכיוון${l.fare_name?" · תעריף "+esc(l.fare_name):""}${site?` · <a href="${site}" target="_blank" rel="noopener">לאתר החברה</a>`:""}</div>
+   ${fares}
+   <div class="bags">${bag("תיק אישי",l.bags.personal_item)}${bag("טרולי",l.bags.carry_on)}${bag("מזוודה",l.bags.checked)}</div>
+   ${(l.bags.notes||[]).length?`<div class="kv" style="margin-top:4px">${l.bags.notes.map(esc).join(" · ")}</div>`:""}
+   <div class="kv" style="margin-top:4px">נבדק: ${new Date(l.checked_at).toLocaleString("he-IL")}</div>
+  </div>`;
+}
+function badges(t){
+  return (t.verified?`<span class="badge b-ok">מחיר חברת התעופה</span>`:`<span class="badge b-unv">טרם אומת מול החברה</span>`)
+   +(t.in_range?"":`<span class="badge b-flex">מחוץ לטווח הימים, דיל משתלם</span>`);
+}
+function openDest(code){
+  const d=DATA.destinations.find(x=>x.code===code); if(!d||!d.best)return;
+  document.getElementById("dtitle").textContent=`${d.city}, ${d.country}`;
+  document.getElementById("dbody").innerHTML=d.options.map((t,i)=>`
+   <div class="opt"><div class="opt-h"><div><b>${i===0?"הכי זול":"אפשרות "+(i+1)}</b> · ${daysLabel(t)} ${badges(t)}</div>
+   <div class="price">${money(t.price_pp)}<small>לאדם הלוך-חזור${DATA.family_size>1?` · ${DATA.family_size} נוסעים כ-${money(t.price_pp*DATA.family_size)}`:""}</small></div></div>
+   <div class="legs">${legHtml("הלוך",t.out)}${legHtml("חזור",t.ret)}</div></div>`).join("")
+   +`<div class="foot">כיסוי הסריקה ליעד: ${d.coverage_pct}% מהתאריכים האפשריים נבדקו לאחרונה.</div>`;
+  dlg.showModal();
+}
+function render(){
+  const g=new Date(DATA.generated_at);
+  const td=DATA.trip_days;
+  document.getElementById("sub").textContent=`עודכן ${g.toLocaleString("he-IL")} · טיסות ישירות הלוך-חזור · ${td.min}–${td.max} ימים · יציאה ${fmtD(DATA.window[0])}–${fmtD(DATA.window[1])} · ללא שבתות וחגים`;
+  if(DATA.demo) document.getElementById("banner").innerHTML=`<div class="banner">⚠️ אלה נתוני הדגמה מומצאים, לא מחירים אמיתיים. הוסיפו מפתח API כדי לקבל מחירים אמיתיים.</div>`;
+  document.getElementById("list").innerHTML=DATA.destinations.map(d=>d.best?`
+   <button class="row" onclick="openDest('${esc(d.code)}')">
+    <div><div class="city">${esc(d.city)}${d.best.verified?"":' <span class="badge b-unv">טרם אומת</span>'}</div><div class="country">${esc(d.country)} · ${esc(d.best.out.airline)}${d.best.out.dep==="ETM"?" · מרמון":""}</div></div>
+    <div class="days">${daysLabel(d.best)}</div>
+    <div class="price">${money(d.best.price_pp)}<small>לאדם</small></div>
+   </button>`:`
+   <div class="row none"><div><div class="city">${esc(d.city)}</div><div class="country">${esc(d.country)}</div></div>
+    <div class="days">לא נמצאה טיסה מתאימה עדיין</div><div class="kv">${d.coverage_pct}% נסרק</div></div>`).join("");
+  const p=DATA.providers.map(p=>`${p.name}: ${p.searches} חיפושים${p.verifies?`, ${p.verifies} אימותים`:""}`).join(" · ");
+  document.getElementById("foot").innerHTML=`ריצה אחרונה: ${esc(p)}. המחירים לאדם (מבוגר), ונכונים לזמן הבדיקה. לפני הזמנה כדאי לוודא באתר חברת התעופה.`;
+}
+fetch("deals.json",{cache:"no-store"}).then(r=>r.json()).then(j=>{DATA=j;render()})
+ .catch(()=>{document.getElementById("sub").textContent="עדיין אין נתונים. הריצה הראשונה לא התבצעה."});
+</script>
+</body>
+</html>

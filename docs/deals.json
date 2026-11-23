@@ -1,0 +1,3667 @@
+{
+ "generated_at": "2026-11-23T03:01:32+00:00",
+ "demo": true,
+ "currency": "ILS",
+ "family_size": 5,
+ "trip_days": {
+  "min": 4,
+  "max": 8,
+  "flex_min": 3,
+  "flex_max": 10,
+  "flex_min_saving_pct": 15
+ },
+ "window": [
+  "2027-05-01",
+  "2027-05-31"
+ ],
+ "shabbat": {
+  "arrive_before_candles_hours": 3,
+  "depart_after_havdalah_hours": 3.5,
+  "diaspora_yomtov_abroad": true,
+  "candle_minutes_israel": 20,
+  "candle_minutes_abroad": 18
+ },
+ "providers": [
+  {
+   "name": "demo",
+   "searches": 744,
+   "verifies": 0
+  }
+ ],
+ "destinations": [
+  {
+   "code": "FCO",
+   "city": "רומא",
+   "country": "איטליה",
+   "best": {
+    "dest": "FCO",
+    "days": 8,
+    "nights": 7,
+    "in_range": true,
+    "price_pp": 519,
+    "verified": true,
+    "out": {
+     "id": "LY 686|2027-05-06T11:55",
+     "provider": "demo",
+     "dep": "TLV",
+     "arr": "FCO",
+     "dep_local": "2027-05-06T11:55",
+     "arr_local": "2027-05-06T13:42",
+     "dep_utc": "2027-05-06T08:55:00+00:00",
+     "arr_utc": "2027-05-06T11:42:00+00:00",
+     "duration_min": 167,
+     "airline": "EL AL",
+     "airline_code": "LY",
+     "flight_numbers": [
+      "LY 686"
+     ],
+     "aircraft": null,
+     "price": 264.0,
+     "currency": "ILS",
+     "seller": "EL AL",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    },
+    "ret": {
+     "id": "A3 614|2027-05-13T08:35",
+     "provider": "demo",
+     "dep": "FCO",
+     "arr": "TLV",
+     "dep_local": "2027-05-13T08:35",
+     "arr_local": "2027-05-13T11:52",
+     "dep_utc": "2027-05-13T06:35:00+00:00",
+     "arr_utc": "2027-05-13T08:52:00+00:00",
+     "duration_min": 137,
+     "airline": "Aegean",
+     "airline_code": "A3",
+     "flight_numbers": [
+      "A3 614"
+     ],
+     "aircraft": null,
+     "price": 255.0,
+     "currency": "ILS",
+     "seller": "Aegean",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    }
+   },
+   "options": [
+    {
+     "dest": "FCO",
+     "days": 8,
+     "nights": 7,
+     "in_range": true,
+     "price_pp": 519,
+     "verified": true,
+     "out": {
+      "id": "LY 686|2027-05-06T11:55",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "FCO",
+      "dep_local": "2027-05-06T11:55",
+      "arr_local": "2027-05-06T13:42",
+      "dep_utc": "2027-05-06T08:55:00+00:00",
+      "arr_utc": "2027-05-06T11:42:00+00:00",
+      "duration_min": 167,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 686"
+      ],
+      "aircraft": null,
+      "price": 264.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 614|2027-05-13T08:35",
+      "provider": "demo",
+      "dep": "FCO",
+      "arr": "TLV",
+      "dep_local": "2027-05-13T08:35",
+      "arr_local": "2027-05-13T11:52",
+      "dep_utc": "2027-05-13T06:35:00+00:00",
+      "arr_utc": "2027-05-13T08:52:00+00:00",
+      "duration_min": 137,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 614"
+      ],
+      "aircraft": null,
+      "price": 255.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "FCO",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 595,
+     "verified": true,
+     "out": {
+      "id": "LY 686|2027-05-06T11:55",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "FCO",
+      "dep_local": "2027-05-06T11:55",
+      "arr_local": "2027-05-06T13:42",
+      "dep_utc": "2027-05-06T08:55:00+00:00",
+      "arr_utc": "2027-05-06T11:42:00+00:00",
+      "duration_min": 167,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 686"
+      ],
+      "aircraft": null,
+      "price": 264.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 614|2027-05-10T12:05",
+      "provider": "demo",
+      "dep": "FCO",
+      "arr": "TLV",
+      "dep_local": "2027-05-10T12:05",
+      "arr_local": "2027-05-10T15:22",
+      "dep_utc": "2027-05-10T10:05:00+00:00",
+      "arr_utc": "2027-05-10T12:22:00+00:00",
+      "duration_min": 137,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 614"
+      ],
+      "aircraft": null,
+      "price": 331.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "FCO",
+     "days": 7,
+     "nights": 6,
+     "in_range": true,
+     "price_pp": 601,
+     "verified": true,
+     "out": {
+      "id": "LY 756|2027-05-11T19:45",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "FCO",
+      "dep_local": "2027-05-11T19:45",
+      "arr_local": "2027-05-11T21:32",
+      "dep_utc": "2027-05-11T16:45:00+00:00",
+      "arr_utc": "2027-05-11T19:32:00+00:00",
+      "duration_min": 167,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 756"
+      ],
+      "aircraft": null,
+      "price": 294.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "IZ 483|2027-05-17T18:25",
+      "provider": "demo",
+      "dep": "FCO",
+      "arr": "TLV",
+      "dep_local": "2027-05-17T18:25",
+      "arr_local": "2027-05-17T21:42",
+      "dep_utc": "2027-05-17T16:25:00+00:00",
+      "arr_utc": "2027-05-17T18:42:00+00:00",
+      "duration_min": 137,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 483"
+      ],
+      "aircraft": null,
+      "price": 307.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "FCO",
+     "days": 6,
+     "nights": 5,
+     "in_range": true,
+     "price_pp": 669,
+     "verified": true,
+     "out": {
+      "id": "LY 756|2027-05-11T19:45",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "FCO",
+      "dep_local": "2027-05-11T19:45",
+      "arr_local": "2027-05-11T21:32",
+      "dep_utc": "2027-05-11T16:45:00+00:00",
+      "arr_utc": "2027-05-11T19:32:00+00:00",
+      "duration_min": 167,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 756"
+      ],
+      "aircraft": null,
+      "price": 294.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "IZ 483|2027-05-16T18:20",
+      "provider": "demo",
+      "dep": "FCO",
+      "arr": "TLV",
+      "dep_local": "2027-05-16T18:20",
+      "arr_local": "2027-05-16T21:37",
+      "dep_utc": "2027-05-16T16:20:00+00:00",
+      "arr_utc": "2027-05-16T18:37:00+00:00",
+      "duration_min": 137,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 483"
+      ],
+      "aircraft": null,
+      "price": 375.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "FCO",
+     "days": 4,
+     "nights": 3,
+     "in_range": true,
+     "price_pp": 783,
+     "verified": true,
+     "out": {
+      "id": "LY 686|2027-05-23T14:45",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "FCO",
+      "dep_local": "2027-05-23T14:45",
+      "arr_local": "2027-05-23T16:32",
+      "dep_utc": "2027-05-23T11:45:00+00:00",
+      "arr_utc": "2027-05-23T14:32:00+00:00",
+      "duration_min": 167,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 686"
+      ],
+      "aircraft": null,
+      "price": 335.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "IZ 483|2027-05-26T10:30",
+      "provider": "demo",
+      "dep": "FCO",
+      "arr": "TLV",
+      "dep_local": "2027-05-26T10:30",
+      "arr_local": "2027-05-26T13:47",
+      "dep_utc": "2027-05-26T08:30:00+00:00",
+      "arr_utc": "2027-05-26T10:47:00+00:00",
+      "duration_min": 137,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 483"
+      ],
+      "aircraft": null,
+      "price": 448.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    }
+   ],
+   "coverage_pct": 100
+  },
+  {
+   "code": "LHR",
+   "city": "לונדון הית'רו",
+   "country": "בריטניה",
+   "best": {
+    "dest": "LHR",
+    "days": 10,
+    "nights": 9,
+    "in_range": false,
+    "price_pp": 547,
+    "verified": true,
+    "out": {
+     "id": "6H 442|2027-05-25T18:05",
+     "provider": "demo",
+     "dep": "TLV",
+     "arr": "LHR",
+     "dep_local": "2027-05-25T18:05",
+     "arr_local": "2027-05-25T18:56",
+     "dep_utc": "2027-05-25T15:05:00+00:00",
+     "arr_utc": "2027-05-25T17:56:00+00:00",
+     "duration_min": 171,
+     "airline": "Israir",
+     "airline_code": "6H",
+     "flight_numbers": [
+      "6H 442"
+     ],
+     "aircraft": null,
+     "price": 269.0,
+     "currency": "ILS",
+     "seller": "Israir",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    },
+    "ret": {
+     "id": "6H 202|2027-06-03T10:15",
+     "provider": "demo",
+     "dep": "LHR",
+     "arr": "TLV",
+     "dep_local": "2027-06-03T10:15",
+     "arr_local": "2027-06-03T14:47",
+     "dep_utc": "2027-06-03T09:15:00+00:00",
+     "arr_utc": "2027-06-03T11:47:00+00:00",
+     "duration_min": 152,
+     "airline": "Israir",
+     "airline_code": "6H",
+     "flight_numbers": [
+      "6H 202"
+     ],
+     "aircraft": null,
+     "price": 278.0,
+     "currency": "ILS",
+     "seller": "Israir",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    }
+   },
+   "options": [
+    {
+     "dest": "LHR",
+     "days": 10,
+     "nights": 9,
+     "in_range": false,
+     "price_pp": 547,
+     "verified": true,
+     "out": {
+      "id": "6H 442|2027-05-25T18:05",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LHR",
+      "dep_local": "2027-05-25T18:05",
+      "arr_local": "2027-05-25T18:56",
+      "dep_utc": "2027-05-25T15:05:00+00:00",
+      "arr_utc": "2027-05-25T17:56:00+00:00",
+      "duration_min": 171,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 442"
+      ],
+      "aircraft": null,
+      "price": 269.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 202|2027-06-03T10:15",
+      "provider": "demo",
+      "dep": "LHR",
+      "arr": "TLV",
+      "dep_local": "2027-06-03T10:15",
+      "arr_local": "2027-06-03T14:47",
+      "dep_utc": "2027-06-03T09:15:00+00:00",
+      "arr_utc": "2027-06-03T11:47:00+00:00",
+      "duration_min": 152,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 202"
+      ],
+      "aircraft": null,
+      "price": 278.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "LHR",
+     "days": 4,
+     "nights": 3,
+     "in_range": true,
+     "price_pp": 648,
+     "verified": true,
+     "out": {
+      "id": "LY 716|2027-05-31T13:15",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LHR",
+      "dep_local": "2027-05-31T13:15",
+      "arr_local": "2027-05-31T14:06",
+      "dep_utc": "2027-05-31T10:15:00+00:00",
+      "arr_utc": "2027-05-31T13:06:00+00:00",
+      "duration_min": 171,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 716"
+      ],
+      "aircraft": null,
+      "price": 370.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 202|2027-06-03T10:15",
+      "provider": "demo",
+      "dep": "LHR",
+      "arr": "TLV",
+      "dep_local": "2027-06-03T10:15",
+      "arr_local": "2027-06-03T14:47",
+      "dep_utc": "2027-06-03T09:15:00+00:00",
+      "arr_utc": "2027-06-03T11:47:00+00:00",
+      "duration_min": 152,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 202"
+      ],
+      "aircraft": null,
+      "price": 278.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "LHR",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 691,
+     "verified": true,
+     "out": {
+      "id": "6H 442|2027-05-14T12:00",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LHR",
+      "dep_local": "2027-05-14T12:00",
+      "arr_local": "2027-05-14T12:51",
+      "dep_utc": "2027-05-14T09:00:00+00:00",
+      "arr_utc": "2027-05-14T11:51:00+00:00",
+      "duration_min": 171,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 442"
+      ],
+      "aircraft": null,
+      "price": 378.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "IZ 688|2027-05-18T18:20",
+      "provider": "demo",
+      "dep": "LHR",
+      "arr": "TLV",
+      "dep_local": "2027-05-18T18:20",
+      "arr_local": "2027-05-18T22:52",
+      "dep_utc": "2027-05-18T17:20:00+00:00",
+      "arr_utc": "2027-05-18T19:52:00+00:00",
+      "duration_min": 152,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 688"
+      ],
+      "aircraft": null,
+      "price": 313.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "LHR",
+     "days": 8,
+     "nights": 7,
+     "in_range": true,
+     "price_pp": 697,
+     "verified": true,
+     "out": {
+      "id": "LY 716|2027-05-17T14:25",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LHR",
+      "dep_local": "2027-05-17T14:25",
+      "arr_local": "2027-05-17T15:16",
+      "dep_utc": "2027-05-17T11:25:00+00:00",
+      "arr_utc": "2027-05-17T14:16:00+00:00",
+      "duration_min": 171,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 716"
+      ],
+      "aircraft": null,
+      "price": 321.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 202|2027-05-24T11:00",
+      "provider": "demo",
+      "dep": "LHR",
+      "arr": "TLV",
+      "dep_local": "2027-05-24T11:00",
+      "arr_local": "2027-05-24T15:32",
+      "dep_utc": "2027-05-24T10:00:00+00:00",
+      "arr_utc": "2027-05-24T12:32:00+00:00",
+      "duration_min": 152,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 202"
+      ],
+      "aircraft": null,
+      "price": 376.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "LHR",
+     "days": 7,
+     "nights": 6,
+     "in_range": true,
+     "price_pp": 734,
+     "verified": true,
+     "out": {
+      "id": "6H 442|2027-05-18T14:20",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LHR",
+      "dep_local": "2027-05-18T14:20",
+      "arr_local": "2027-05-18T15:11",
+      "dep_utc": "2027-05-18T11:20:00+00:00",
+      "arr_utc": "2027-05-18T14:11:00+00:00",
+      "duration_min": 171,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 442"
+      ],
+      "aircraft": null,
+      "price": 358.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 202|2027-05-24T11:00",
+      "provider": "demo",
+      "dep": "LHR",
+      "arr": "TLV",
+      "dep_local": "2027-05-24T11:00",
+      "arr_local": "2027-05-24T15:32",
+      "dep_utc": "2027-05-24T10:00:00+00:00",
+      "arr_utc": "2027-05-24T12:32:00+00:00",
+      "duration_min": 152,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 202"
+      ],
+      "aircraft": null,
+      "price": 376.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "LHR",
+     "days": 6,
+     "nights": 5,
+     "in_range": true,
+     "price_pp": 979,
+     "verified": true,
+     "out": {
+      "id": "6H 442|2027-05-18T14:20",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LHR",
+      "dep_local": "2027-05-18T14:20",
+      "arr_local": "2027-05-18T15:11",
+      "dep_utc": "2027-05-18T11:20:00+00:00",
+      "arr_utc": "2027-05-18T14:11:00+00:00",
+      "duration_min": 171,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 442"
+      ],
+      "aircraft": null,
+      "price": 358.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 202|2027-05-23T16:45",
+      "provider": "demo",
+      "dep": "LHR",
+      "arr": "TLV",
+      "dep_local": "2027-05-23T16:45",
+      "arr_local": "2027-05-23T21:17",
+      "dep_utc": "2027-05-23T15:45:00+00:00",
+      "arr_utc": "2027-05-23T18:17:00+00:00",
+      "duration_min": 152,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 202"
+      ],
+      "aircraft": null,
+      "price": 621.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    }
+   ],
+   "coverage_pct": 100
+  },
+  {
+   "code": "LCA",
+   "city": "לרנקה",
+   "country": "קפריסין",
+   "best": {
+    "dest": "LCA",
+    "days": 8,
+    "nights": 7,
+    "in_range": true,
+    "price_pp": 582,
+    "verified": true,
+    "out": {
+     "id": "6H 777|2027-05-19T17:40",
+     "provider": "demo",
+     "dep": "TLV",
+     "arr": "LCA",
+     "dep_local": "2027-05-19T17:40",
+     "arr_local": "2027-05-19T19:41",
+     "dep_utc": "2027-05-19T14:40:00+00:00",
+     "arr_utc": "2027-05-19T16:41:00+00:00",
+     "duration_min": 121,
+     "airline": "Israir",
+     "airline_code": "6H",
+     "flight_numbers": [
+      "6H 777"
+     ],
+     "aircraft": null,
+     "price": 329.0,
+     "currency": "ILS",
+     "seller": "Israir",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    },
+    "ret": {
+     "id": "W6 130|2027-05-26T06:30",
+     "provider": "demo",
+     "dep": "LCA",
+     "arr": "TLV",
+     "dep_local": "2027-05-26T06:30",
+     "arr_local": "2027-05-26T10:04",
+     "dep_utc": "2027-05-26T03:30:00+00:00",
+     "arr_utc": "2027-05-26T07:04:00+00:00",
+     "duration_min": 214,
+     "airline": "Wizz Air",
+     "airline_code": "W6",
+     "flight_numbers": [
+      "W6 130"
+     ],
+     "aircraft": null,
+     "price": 253.0,
+     "currency": "ILS",
+     "seller": "Wizz Air",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": false,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    }
+   },
+   "options": [
+    {
+     "dest": "LCA",
+     "days": 8,
+     "nights": 7,
+     "in_range": true,
+     "price_pp": 582,
+     "verified": true,
+     "out": {
+      "id": "6H 777|2027-05-19T17:40",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LCA",
+      "dep_local": "2027-05-19T17:40",
+      "arr_local": "2027-05-19T19:41",
+      "dep_utc": "2027-05-19T14:40:00+00:00",
+      "arr_utc": "2027-05-19T16:41:00+00:00",
+      "duration_min": 121,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 777"
+      ],
+      "aircraft": null,
+      "price": 329.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "W6 130|2027-05-26T06:30",
+      "provider": "demo",
+      "dep": "LCA",
+      "arr": "TLV",
+      "dep_local": "2027-05-26T06:30",
+      "arr_local": "2027-05-26T10:04",
+      "dep_utc": "2027-05-26T03:30:00+00:00",
+      "arr_utc": "2027-05-26T07:04:00+00:00",
+      "duration_min": 214,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 130"
+      ],
+      "aircraft": null,
+      "price": 253.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "LCA",
+     "days": 7,
+     "nights": 6,
+     "in_range": true,
+     "price_pp": 705,
+     "verified": true,
+     "out": {
+      "id": "6H 777|2027-05-19T17:40",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LCA",
+      "dep_local": "2027-05-19T17:40",
+      "arr_local": "2027-05-19T19:41",
+      "dep_utc": "2027-05-19T14:40:00+00:00",
+      "arr_utc": "2027-05-19T16:41:00+00:00",
+      "duration_min": 121,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 777"
+      ],
+      "aircraft": null,
+      "price": 329.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "W6 130|2027-05-25T05:55",
+      "provider": "demo",
+      "dep": "LCA",
+      "arr": "TLV",
+      "dep_local": "2027-05-25T05:55",
+      "arr_local": "2027-05-25T09:29",
+      "dep_utc": "2027-05-25T02:55:00+00:00",
+      "arr_utc": "2027-05-25T06:29:00+00:00",
+      "duration_min": 214,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 130"
+      ],
+      "aircraft": null,
+      "price": 376.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "LCA",
+     "days": 6,
+     "nights": 5,
+     "in_range": true,
+     "price_pp": 790,
+     "verified": true,
+     "out": {
+      "id": "6H 777|2027-05-21T14:20",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LCA",
+      "dep_local": "2027-05-21T14:20",
+      "arr_local": "2027-05-21T16:21",
+      "dep_utc": "2027-05-21T11:20:00+00:00",
+      "arr_utc": "2027-05-21T13:21:00+00:00",
+      "duration_min": 121,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 777"
+      ],
+      "aircraft": null,
+      "price": 537.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "W6 130|2027-05-26T06:30",
+      "provider": "demo",
+      "dep": "LCA",
+      "arr": "TLV",
+      "dep_local": "2027-05-26T06:30",
+      "arr_local": "2027-05-26T10:04",
+      "dep_utc": "2027-05-26T03:30:00+00:00",
+      "arr_utc": "2027-05-26T07:04:00+00:00",
+      "duration_min": 214,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 130"
+      ],
+      "aircraft": null,
+      "price": 253.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "LCA",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 817,
+     "verified": true,
+     "out": {
+      "id": "LY 561|2027-05-07T07:20",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LCA",
+      "dep_local": "2027-05-07T07:20",
+      "arr_local": "2027-05-07T09:21",
+      "dep_utc": "2027-05-07T04:20:00+00:00",
+      "arr_utc": "2027-05-07T06:21:00+00:00",
+      "duration_min": 121,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 561"
+      ],
+      "aircraft": null,
+      "price": 404.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "IZ 273|2027-05-11T10:45",
+      "provider": "demo",
+      "dep": "LCA",
+      "arr": "TLV",
+      "dep_local": "2027-05-11T10:45",
+      "arr_local": "2027-05-11T14:19",
+      "dep_utc": "2027-05-11T07:45:00+00:00",
+      "arr_utc": "2027-05-11T11:19:00+00:00",
+      "duration_min": 214,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 273"
+      ],
+      "aircraft": null,
+      "price": 413.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "LCA",
+     "days": 4,
+     "nights": 3,
+     "in_range": true,
+     "price_pp": 823,
+     "verified": true,
+     "out": {
+      "id": "6H 777|2027-05-23T19:45",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "LCA",
+      "dep_local": "2027-05-23T19:45",
+      "arr_local": "2027-05-23T21:46",
+      "dep_utc": "2027-05-23T16:45:00+00:00",
+      "arr_utc": "2027-05-23T18:46:00+00:00",
+      "duration_min": 121,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 777"
+      ],
+      "aircraft": null,
+      "price": 570.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "W6 130|2027-05-26T06:30",
+      "provider": "demo",
+      "dep": "LCA",
+      "arr": "TLV",
+      "dep_local": "2027-05-26T06:30",
+      "arr_local": "2027-05-26T10:04",
+      "dep_utc": "2027-05-26T03:30:00+00:00",
+      "arr_utc": "2027-05-26T07:04:00+00:00",
+      "duration_min": 214,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 130"
+      ],
+      "aircraft": null,
+      "price": 253.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    }
+   ],
+   "coverage_pct": 100
+  },
+  {
+   "code": "PRG",
+   "city": "פראג",
+   "country": "צ'כיה",
+   "best": {
+    "dest": "PRG",
+    "days": 3,
+    "nights": 2,
+    "in_range": false,
+    "price_pp": 608,
+    "verified": true,
+    "out": {
+     "id": "LY 521|2027-05-14T10:00",
+     "provider": "demo",
+     "dep": "TLV",
+     "arr": "PRG",
+     "dep_local": "2027-05-14T10:00",
+     "arr_local": "2027-05-14T12:44",
+     "dep_utc": "2027-05-14T07:00:00+00:00",
+     "arr_utc": "2027-05-14T10:44:00+00:00",
+     "duration_min": 224,
+     "airline": "EL AL",
+     "airline_code": "LY",
+     "flight_numbers": [
+      "LY 521"
+     ],
+     "aircraft": null,
+     "price": 272.0,
+     "currency": "ILS",
+     "seller": "EL AL",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    },
+    "ret": {
+     "id": "A3 689|2027-05-16T05:50",
+     "provider": "demo",
+     "dep": "PRG",
+     "arr": "TLV",
+     "dep_local": "2027-05-16T05:50",
+     "arr_local": "2027-05-16T10:17",
+     "dep_utc": "2027-05-16T03:50:00+00:00",
+     "arr_utc": "2027-05-16T07:17:00+00:00",
+     "duration_min": 207,
+     "airline": "Aegean",
+     "airline_code": "A3",
+     "flight_numbers": [
+      "A3 689"
+     ],
+     "aircraft": null,
+     "price": 336.0,
+     "currency": "ILS",
+     "seller": "Aegean",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    }
+   },
+   "options": [
+    {
+     "dest": "PRG",
+     "days": 3,
+     "nights": 2,
+     "in_range": false,
+     "price_pp": 608,
+     "verified": true,
+     "out": {
+      "id": "LY 521|2027-05-14T10:00",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "PRG",
+      "dep_local": "2027-05-14T10:00",
+      "arr_local": "2027-05-14T12:44",
+      "dep_utc": "2027-05-14T07:00:00+00:00",
+      "arr_utc": "2027-05-14T10:44:00+00:00",
+      "duration_min": 224,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 521"
+      ],
+      "aircraft": null,
+      "price": 272.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 689|2027-05-16T05:50",
+      "provider": "demo",
+      "dep": "PRG",
+      "arr": "TLV",
+      "dep_local": "2027-05-16T05:50",
+      "arr_local": "2027-05-16T10:17",
+      "dep_utc": "2027-05-16T03:50:00+00:00",
+      "arr_utc": "2027-05-16T07:17:00+00:00",
+      "duration_min": 207,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 689"
+      ],
+      "aircraft": null,
+      "price": 336.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "PRG",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 720,
+     "verified": true,
+     "out": {
+      "id": "LY 521|2027-05-14T10:00",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "PRG",
+      "dep_local": "2027-05-14T10:00",
+      "arr_local": "2027-05-14T12:44",
+      "dep_utc": "2027-05-14T07:00:00+00:00",
+      "arr_utc": "2027-05-14T10:44:00+00:00",
+      "duration_min": 224,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 521"
+      ],
+      "aircraft": null,
+      "price": 272.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 689|2027-05-18T12:20",
+      "provider": "demo",
+      "dep": "PRG",
+      "arr": "TLV",
+      "dep_local": "2027-05-18T12:20",
+      "arr_local": "2027-05-18T16:47",
+      "dep_utc": "2027-05-18T10:20:00+00:00",
+      "arr_utc": "2027-05-18T13:47:00+00:00",
+      "duration_min": 207,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 689"
+      ],
+      "aircraft": null,
+      "price": 448.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "PRG",
+     "days": 7,
+     "nights": 6,
+     "in_range": true,
+     "price_pp": 855,
+     "verified": true,
+     "out": {
+      "id": "W6 880|2027-05-10T20:10",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "PRG",
+      "dep_local": "2027-05-10T20:10",
+      "arr_local": "2027-05-10T22:54",
+      "dep_utc": "2027-05-10T17:10:00+00:00",
+      "arr_utc": "2027-05-10T20:54:00+00:00",
+      "duration_min": 224,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 880"
+      ],
+      "aircraft": null,
+      "price": 519.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 689|2027-05-16T05:50",
+      "provider": "demo",
+      "dep": "PRG",
+      "arr": "TLV",
+      "dep_local": "2027-05-16T05:50",
+      "arr_local": "2027-05-16T10:17",
+      "dep_utc": "2027-05-16T03:50:00+00:00",
+      "arr_utc": "2027-05-16T07:17:00+00:00",
+      "duration_min": 207,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 689"
+      ],
+      "aircraft": null,
+      "price": 336.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "PRG",
+     "days": 4,
+     "nights": 3,
+     "in_range": true,
+     "price_pp": 876,
+     "verified": true,
+     "out": {
+      "id": "LY 521|2027-05-14T10:00",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "PRG",
+      "dep_local": "2027-05-14T10:00",
+      "arr_local": "2027-05-14T12:44",
+      "dep_utc": "2027-05-14T07:00:00+00:00",
+      "arr_utc": "2027-05-14T10:44:00+00:00",
+      "duration_min": 224,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 521"
+      ],
+      "aircraft": null,
+      "price": 272.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 129|2027-05-17T15:25",
+      "provider": "demo",
+      "dep": "PRG",
+      "arr": "TLV",
+      "dep_local": "2027-05-17T15:25",
+      "arr_local": "2027-05-17T19:52",
+      "dep_utc": "2027-05-17T13:25:00+00:00",
+      "arr_utc": "2027-05-17T16:52:00+00:00",
+      "duration_min": 207,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 129"
+      ],
+      "aircraft": null,
+      "price": 604.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "PRG",
+     "days": 8,
+     "nights": 7,
+     "in_range": true,
+     "price_pp": 912,
+     "verified": true,
+     "out": {
+      "id": "W6 880|2027-05-25T10:55",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "PRG",
+      "dep_local": "2027-05-25T10:55",
+      "arr_local": "2027-05-25T13:39",
+      "dep_utc": "2027-05-25T07:55:00+00:00",
+      "arr_utc": "2027-05-25T11:39:00+00:00",
+      "duration_min": 224,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 880"
+      ],
+      "aircraft": null,
+      "price": 662.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 129|2027-06-01T06:20",
+      "provider": "demo",
+      "dep": "PRG",
+      "arr": "TLV",
+      "dep_local": "2027-06-01T06:20",
+      "arr_local": "2027-06-01T10:47",
+      "dep_utc": "2027-06-01T04:20:00+00:00",
+      "arr_utc": "2027-06-01T07:47:00+00:00",
+      "duration_min": 207,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 129"
+      ],
+      "aircraft": null,
+      "price": 250.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "PRG",
+     "days": 6,
+     "nights": 5,
+     "in_range": true,
+     "price_pp": 918,
+     "verified": true,
+     "out": {
+      "id": "W6 880|2027-05-20T05:25",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "PRG",
+      "dep_local": "2027-05-20T05:25",
+      "arr_local": "2027-05-20T08:09",
+      "dep_utc": "2027-05-20T02:25:00+00:00",
+      "arr_utc": "2027-05-20T06:09:00+00:00",
+      "duration_min": 224,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 880"
+      ],
+      "aircraft": null,
+      "price": 466.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 129|2027-05-25T05:55",
+      "provider": "demo",
+      "dep": "PRG",
+      "arr": "TLV",
+      "dep_local": "2027-05-25T05:55",
+      "arr_local": "2027-05-25T10:22",
+      "dep_utc": "2027-05-25T03:55:00+00:00",
+      "arr_utc": "2027-05-25T07:22:00+00:00",
+      "duration_min": 207,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 129"
+      ],
+      "aircraft": null,
+      "price": 452.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    }
+   ],
+   "coverage_pct": 100
+  },
+  {
+   "code": "ATH",
+   "city": "אתונה",
+   "country": "יוון",
+   "best": {
+    "dest": "ATH",
+    "days": 7,
+    "nights": 6,
+    "in_range": true,
+    "price_pp": 621,
+    "verified": true,
+    "out": {
+     "id": "IZ 513|2027-05-03T11:25",
+     "provider": "demo",
+     "dep": "TLV",
+     "arr": "ATH",
+     "dep_local": "2027-05-03T11:25",
+     "arr_local": "2027-05-03T15:34",
+     "dep_utc": "2027-05-03T08:25:00+00:00",
+     "arr_utc": "2027-05-03T12:34:00+00:00",
+     "duration_min": 249,
+     "airline": "Arkia",
+     "airline_code": "IZ",
+     "flight_numbers": [
+      "IZ 513"
+     ],
+     "aircraft": null,
+     "price": 311.0,
+     "currency": "ILS",
+     "seller": "Arkia",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    },
+    "ret": {
+     "id": "6H 482|2027-05-09T07:00",
+     "provider": "demo",
+     "dep": "ATH",
+     "arr": "TLV",
+     "dep_local": "2027-05-09T07:00",
+     "arr_local": "2027-05-09T09:15",
+     "dep_utc": "2027-05-09T04:00:00+00:00",
+     "arr_utc": "2027-05-09T06:15:00+00:00",
+     "duration_min": 135,
+     "airline": "Israir",
+     "airline_code": "6H",
+     "flight_numbers": [
+      "6H 482"
+     ],
+     "aircraft": null,
+     "price": 310.0,
+     "currency": "ILS",
+     "seller": "Israir",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    }
+   },
+   "options": [
+    {
+     "dest": "ATH",
+     "days": 7,
+     "nights": 6,
+     "in_range": true,
+     "price_pp": 621,
+     "verified": true,
+     "out": {
+      "id": "IZ 513|2027-05-03T11:25",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "ATH",
+      "dep_local": "2027-05-03T11:25",
+      "arr_local": "2027-05-03T15:34",
+      "dep_utc": "2027-05-03T08:25:00+00:00",
+      "arr_utc": "2027-05-03T12:34:00+00:00",
+      "duration_min": 249,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 513"
+      ],
+      "aircraft": null,
+      "price": 311.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 482|2027-05-09T07:00",
+      "provider": "demo",
+      "dep": "ATH",
+      "arr": "TLV",
+      "dep_local": "2027-05-09T07:00",
+      "arr_local": "2027-05-09T09:15",
+      "dep_utc": "2027-05-09T04:00:00+00:00",
+      "arr_utc": "2027-05-09T06:15:00+00:00",
+      "duration_min": 135,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 482"
+      ],
+      "aircraft": null,
+      "price": 310.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "ATH",
+     "days": 6,
+     "nights": 5,
+     "in_range": true,
+     "price_pp": 741,
+     "verified": true,
+     "out": {
+      "id": "IZ 513|2027-05-04T18:55",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "ATH",
+      "dep_local": "2027-05-04T18:55",
+      "arr_local": "2027-05-04T23:04",
+      "dep_utc": "2027-05-04T15:55:00+00:00",
+      "arr_utc": "2027-05-04T20:04:00+00:00",
+      "duration_min": 249,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 513"
+      ],
+      "aircraft": null,
+      "price": 431.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 482|2027-05-09T07:00",
+      "provider": "demo",
+      "dep": "ATH",
+      "arr": "TLV",
+      "dep_local": "2027-05-09T07:00",
+      "arr_local": "2027-05-09T09:15",
+      "dep_utc": "2027-05-09T04:00:00+00:00",
+      "arr_utc": "2027-05-09T06:15:00+00:00",
+      "duration_min": 135,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 482"
+      ],
+      "aircraft": null,
+      "price": 310.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "ATH",
+     "days": 8,
+     "nights": 7,
+     "in_range": true,
+     "price_pp": 826,
+     "verified": true,
+     "out": {
+      "id": "IZ 513|2027-05-02T17:15",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "ATH",
+      "dep_local": "2027-05-02T17:15",
+      "arr_local": "2027-05-02T21:24",
+      "dep_utc": "2027-05-02T14:15:00+00:00",
+      "arr_utc": "2027-05-02T18:24:00+00:00",
+      "duration_min": 249,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 513"
+      ],
+      "aircraft": null,
+      "price": 516.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 482|2027-05-09T07:00",
+      "provider": "demo",
+      "dep": "ATH",
+      "arr": "TLV",
+      "dep_local": "2027-05-09T07:00",
+      "arr_local": "2027-05-09T09:15",
+      "dep_utc": "2027-05-09T04:00:00+00:00",
+      "arr_utc": "2027-05-09T06:15:00+00:00",
+      "duration_min": 135,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 482"
+      ],
+      "aircraft": null,
+      "price": 310.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "ATH",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 892,
+     "verified": true,
+     "out": {
+      "id": "IZ 513|2027-05-13T11:50",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "ATH",
+      "dep_local": "2027-05-13T11:50",
+      "arr_local": "2027-05-13T15:59",
+      "dep_utc": "2027-05-13T08:50:00+00:00",
+      "arr_utc": "2027-05-13T12:59:00+00:00",
+      "duration_min": 249,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 513"
+      ],
+      "aircraft": null,
+      "price": 444.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 482|2027-05-17T05:40",
+      "provider": "demo",
+      "dep": "ATH",
+      "arr": "TLV",
+      "dep_local": "2027-05-17T05:40",
+      "arr_local": "2027-05-17T07:55",
+      "dep_utc": "2027-05-17T02:40:00+00:00",
+      "arr_utc": "2027-05-17T04:55:00+00:00",
+      "duration_min": 135,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 482"
+      ],
+      "aircraft": null,
+      "price": 448.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "ATH",
+     "days": 4,
+     "nights": 3,
+     "in_range": true,
+     "price_pp": 980,
+     "verified": true,
+     "out": {
+      "id": "IZ 513|2027-05-06T15:55",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "ATH",
+      "dep_local": "2027-05-06T15:55",
+      "arr_local": "2027-05-06T20:04",
+      "dep_utc": "2027-05-06T12:55:00+00:00",
+      "arr_utc": "2027-05-06T17:04:00+00:00",
+      "duration_min": 249,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 513"
+      ],
+      "aircraft": null,
+      "price": 670.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 482|2027-05-09T07:00",
+      "provider": "demo",
+      "dep": "ATH",
+      "arr": "TLV",
+      "dep_local": "2027-05-09T07:00",
+      "arr_local": "2027-05-09T09:15",
+      "dep_utc": "2027-05-09T04:00:00+00:00",
+      "arr_utc": "2027-05-09T06:15:00+00:00",
+      "duration_min": 135,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 482"
+      ],
+      "aircraft": null,
+      "price": 310.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    }
+   ],
+   "coverage_pct": 100
+  },
+  {
+   "code": "RHO",
+   "city": "רודוס",
+   "country": "יוון",
+   "best": {
+    "dest": "RHO",
+    "days": 9,
+    "nights": 8,
+    "in_range": false,
+    "price_pp": 652,
+    "verified": true,
+    "out": {
+     "id": "W6 800|2027-05-19T13:40",
+     "provider": "demo",
+     "dep": "TLV",
+     "arr": "RHO",
+     "dep_local": "2027-05-19T13:40",
+     "arr_local": "2027-05-19T16:23",
+     "dep_utc": "2027-05-19T10:40:00+00:00",
+     "arr_utc": "2027-05-19T13:23:00+00:00",
+     "duration_min": 163,
+     "airline": "Wizz Air",
+     "airline_code": "W6",
+     "flight_numbers": [
+      "W6 800"
+     ],
+     "aircraft": null,
+     "price": 308.0,
+     "currency": "ILS",
+     "seller": "Wizz Air",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": false,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    },
+    "ret": {
+     "id": "6H 847|2027-05-27T06:10",
+     "provider": "demo",
+     "dep": "RHO",
+     "arr": "TLV",
+     "dep_local": "2027-05-27T06:10",
+     "arr_local": "2027-05-27T08:43",
+     "dep_utc": "2027-05-27T03:10:00+00:00",
+     "arr_utc": "2027-05-27T05:43:00+00:00",
+     "duration_min": 153,
+     "airline": "Israir",
+     "airline_code": "6H",
+     "flight_numbers": [
+      "6H 847"
+     ],
+     "aircraft": null,
+     "price": 344.0,
+     "currency": "ILS",
+     "seller": "Israir",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    }
+   },
+   "options": [
+    {
+     "dest": "RHO",
+     "days": 9,
+     "nights": 8,
+     "in_range": false,
+     "price_pp": 652,
+     "verified": true,
+     "out": {
+      "id": "W6 800|2027-05-19T13:40",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "RHO",
+      "dep_local": "2027-05-19T13:40",
+      "arr_local": "2027-05-19T16:23",
+      "dep_utc": "2027-05-19T10:40:00+00:00",
+      "arr_utc": "2027-05-19T13:23:00+00:00",
+      "duration_min": 163,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 800"
+      ],
+      "aircraft": null,
+      "price": 308.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 847|2027-05-27T06:10",
+      "provider": "demo",
+      "dep": "RHO",
+      "arr": "TLV",
+      "dep_local": "2027-05-27T06:10",
+      "arr_local": "2027-05-27T08:43",
+      "dep_utc": "2027-05-27T03:10:00+00:00",
+      "arr_utc": "2027-05-27T05:43:00+00:00",
+      "duration_min": 153,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 847"
+      ],
+      "aircraft": null,
+      "price": 344.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "RHO",
+     "days": 7,
+     "nights": 6,
+     "in_range": true,
+     "price_pp": 820,
+     "verified": true,
+     "out": {
+      "id": "A3 759|2027-05-06T19:30",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "RHO",
+      "dep_local": "2027-05-06T19:30",
+      "arr_local": "2027-05-06T22:13",
+      "dep_utc": "2027-05-06T16:30:00+00:00",
+      "arr_utc": "2027-05-06T19:13:00+00:00",
+      "duration_min": 163,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 759"
+      ],
+      "aircraft": null,
+      "price": 530.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 847|2027-05-12T20:55",
+      "provider": "demo",
+      "dep": "RHO",
+      "arr": "TLV",
+      "dep_local": "2027-05-12T20:55",
+      "arr_local": "2027-05-12T23:28",
+      "dep_utc": "2027-05-12T17:55:00+00:00",
+      "arr_utc": "2027-05-12T20:28:00+00:00",
+      "duration_min": 153,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 847"
+      ],
+      "aircraft": null,
+      "price": 290.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "RHO",
+     "days": 6,
+     "nights": 5,
+     "in_range": true,
+     "price_pp": 849,
+     "verified": true,
+     "out": {
+      "id": "W6 800|2027-05-19T13:40",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "RHO",
+      "dep_local": "2027-05-19T13:40",
+      "arr_local": "2027-05-19T16:23",
+      "dep_utc": "2027-05-19T10:40:00+00:00",
+      "arr_utc": "2027-05-19T13:23:00+00:00",
+      "duration_min": 163,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 800"
+      ],
+      "aircraft": null,
+      "price": 308.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 847|2027-05-24T12:00",
+      "provider": "demo",
+      "dep": "RHO",
+      "arr": "TLV",
+      "dep_local": "2027-05-24T12:00",
+      "arr_local": "2027-05-24T14:33",
+      "dep_utc": "2027-05-24T09:00:00+00:00",
+      "arr_utc": "2027-05-24T11:33:00+00:00",
+      "duration_min": 153,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 847"
+      ],
+      "aircraft": null,
+      "price": 541.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "RHO",
+     "days": 4,
+     "nights": 3,
+     "in_range": true,
+     "price_pp": 851,
+     "verified": true,
+     "out": {
+      "id": "A3 759|2027-05-09T17:00",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "RHO",
+      "dep_local": "2027-05-09T17:00",
+      "arr_local": "2027-05-09T19:43",
+      "dep_utc": "2027-05-09T14:00:00+00:00",
+      "arr_utc": "2027-05-09T16:43:00+00:00",
+      "duration_min": 163,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 759"
+      ],
+      "aircraft": null,
+      "price": 561.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 847|2027-05-12T20:55",
+      "provider": "demo",
+      "dep": "RHO",
+      "arr": "TLV",
+      "dep_local": "2027-05-12T20:55",
+      "arr_local": "2027-05-12T23:28",
+      "dep_utc": "2027-05-12T17:55:00+00:00",
+      "arr_utc": "2027-05-12T20:28:00+00:00",
+      "duration_min": 153,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 847"
+      ],
+      "aircraft": null,
+      "price": 290.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "RHO",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 866,
+     "verified": true,
+     "out": {
+      "id": "W6 800|2027-05-19T13:40",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "RHO",
+      "dep_local": "2027-05-19T13:40",
+      "arr_local": "2027-05-19T16:23",
+      "dep_utc": "2027-05-19T10:40:00+00:00",
+      "arr_utc": "2027-05-19T13:23:00+00:00",
+      "duration_min": 163,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 800"
+      ],
+      "aircraft": null,
+      "price": 308.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 847|2027-05-23T08:45",
+      "provider": "demo",
+      "dep": "RHO",
+      "arr": "TLV",
+      "dep_local": "2027-05-23T08:45",
+      "arr_local": "2027-05-23T11:18",
+      "dep_utc": "2027-05-23T05:45:00+00:00",
+      "arr_utc": "2027-05-23T08:18:00+00:00",
+      "duration_min": 153,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 847"
+      ],
+      "aircraft": null,
+      "price": 558.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "RHO",
+     "days": 8,
+     "nights": 7,
+     "in_range": true,
+     "price_pp": 944,
+     "verified": true,
+     "out": {
+      "id": "A3 759|2027-05-04T08:35",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "RHO",
+      "dep_local": "2027-05-04T08:35",
+      "arr_local": "2027-05-04T11:18",
+      "dep_utc": "2027-05-04T05:35:00+00:00",
+      "arr_utc": "2027-05-04T08:18:00+00:00",
+      "duration_min": 163,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 759"
+      ],
+      "aircraft": null,
+      "price": 608.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "W6 325|2027-05-11T20:45",
+      "provider": "demo",
+      "dep": "RHO",
+      "arr": "TLV",
+      "dep_local": "2027-05-11T20:45",
+      "arr_local": "2027-05-11T23:18",
+      "dep_utc": "2027-05-11T17:45:00+00:00",
+      "arr_utc": "2027-05-11T20:18:00+00:00",
+      "duration_min": 153,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 325"
+      ],
+      "aircraft": null,
+      "price": 336.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    }
+   ],
+   "coverage_pct": 100
+  },
+  {
+   "code": "BUD",
+   "city": "בודפשט",
+   "country": "הונגריה",
+   "best": {
+    "dest": "BUD",
+    "days": 8,
+    "nights": 7,
+    "in_range": true,
+    "price_pp": 700,
+    "verified": true,
+    "out": {
+     "id": "W6 790|2027-05-23T17:45",
+     "provider": "demo",
+     "dep": "TLV",
+     "arr": "BUD",
+     "dep_local": "2027-05-23T17:45",
+     "arr_local": "2027-05-23T19:13",
+     "dep_utc": "2027-05-23T14:45:00+00:00",
+     "arr_utc": "2027-05-23T17:13:00+00:00",
+     "duration_min": 148,
+     "airline": "Wizz Air",
+     "airline_code": "W6",
+     "flight_numbers": [
+      "W6 790"
+     ],
+     "aircraft": null,
+     "price": 318.0,
+     "currency": "ILS",
+     "seller": "Wizz Air",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": false,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    },
+    "ret": {
+     "id": "A3 604|2027-05-30T10:00",
+     "provider": "demo",
+     "dep": "BUD",
+     "arr": "TLV",
+     "dep_local": "2027-05-30T10:00",
+     "arr_local": "2027-05-30T15:06",
+     "dep_utc": "2027-05-30T08:00:00+00:00",
+     "arr_utc": "2027-05-30T12:06:00+00:00",
+     "duration_min": 246,
+     "airline": "Aegean",
+     "airline_code": "A3",
+     "flight_numbers": [
+      "A3 604"
+     ],
+     "aircraft": null,
+     "price": 382.0,
+     "currency": "ILS",
+     "seller": "Aegean",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    }
+   },
+   "options": [
+    {
+     "dest": "BUD",
+     "days": 8,
+     "nights": 7,
+     "in_range": true,
+     "price_pp": 700,
+     "verified": true,
+     "out": {
+      "id": "W6 790|2027-05-23T17:45",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BUD",
+      "dep_local": "2027-05-23T17:45",
+      "arr_local": "2027-05-23T19:13",
+      "dep_utc": "2027-05-23T14:45:00+00:00",
+      "arr_utc": "2027-05-23T17:13:00+00:00",
+      "duration_min": 148,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 790"
+      ],
+      "aircraft": null,
+      "price": 318.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 604|2027-05-30T10:00",
+      "provider": "demo",
+      "dep": "BUD",
+      "arr": "TLV",
+      "dep_local": "2027-05-30T10:00",
+      "arr_local": "2027-05-30T15:06",
+      "dep_utc": "2027-05-30T08:00:00+00:00",
+      "arr_utc": "2027-05-30T12:06:00+00:00",
+      "duration_min": 246,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 604"
+      ],
+      "aircraft": null,
+      "price": 382.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "BUD",
+     "days": 6,
+     "nights": 5,
+     "in_range": true,
+     "price_pp": 706,
+     "verified": true,
+     "out": {
+      "id": "W6 790|2027-05-12T19:55",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BUD",
+      "dep_local": "2027-05-12T19:55",
+      "arr_local": "2027-05-12T21:23",
+      "dep_utc": "2027-05-12T16:55:00+00:00",
+      "arr_utc": "2027-05-12T19:23:00+00:00",
+      "duration_min": 148,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 790"
+      ],
+      "aircraft": null,
+      "price": 388.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 604|2027-05-17T08:25",
+      "provider": "demo",
+      "dep": "BUD",
+      "arr": "TLV",
+      "dep_local": "2027-05-17T08:25",
+      "arr_local": "2027-05-17T13:31",
+      "dep_utc": "2027-05-17T06:25:00+00:00",
+      "arr_utc": "2027-05-17T10:31:00+00:00",
+      "duration_min": 246,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 604"
+      ],
+      "aircraft": null,
+      "price": 318.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "BUD",
+     "days": 4,
+     "nights": 3,
+     "in_range": true,
+     "price_pp": 766,
+     "verified": true,
+     "out": {
+      "id": "IZ 463|2027-05-11T17:45",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BUD",
+      "dep_local": "2027-05-11T17:45",
+      "arr_local": "2027-05-11T19:13",
+      "dep_utc": "2027-05-11T14:45:00+00:00",
+      "arr_utc": "2027-05-11T17:13:00+00:00",
+      "duration_min": 148,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 463"
+      ],
+      "aircraft": null,
+      "price": 492.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 604|2027-05-14T09:40",
+      "provider": "demo",
+      "dep": "BUD",
+      "arr": "TLV",
+      "dep_local": "2027-05-14T09:40",
+      "arr_local": "2027-05-14T14:46",
+      "dep_utc": "2027-05-14T07:40:00+00:00",
+      "arr_utc": "2027-05-14T11:46:00+00:00",
+      "duration_min": 246,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 604"
+      ],
+      "aircraft": null,
+      "price": 274.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "BUD",
+     "days": 7,
+     "nights": 6,
+     "in_range": true,
+     "price_pp": 810,
+     "verified": true,
+     "out": {
+      "id": "IZ 463|2027-05-11T17:45",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BUD",
+      "dep_local": "2027-05-11T17:45",
+      "arr_local": "2027-05-11T19:13",
+      "dep_utc": "2027-05-11T14:45:00+00:00",
+      "arr_utc": "2027-05-11T17:13:00+00:00",
+      "duration_min": 148,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 463"
+      ],
+      "aircraft": null,
+      "price": 492.0,
+      "currency": "ILS",
+      "seller": "Arkia",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 604|2027-05-17T08:25",
+      "provider": "demo",
+      "dep": "BUD",
+      "arr": "TLV",
+      "dep_local": "2027-05-17T08:25",
+      "arr_local": "2027-05-17T13:31",
+      "dep_utc": "2027-05-17T06:25:00+00:00",
+      "arr_utc": "2027-05-17T10:31:00+00:00",
+      "duration_min": 246,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 604"
+      ],
+      "aircraft": null,
+      "price": 318.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "BUD",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 857,
+     "verified": true,
+     "out": {
+      "id": "W6 790|2027-05-23T17:45",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BUD",
+      "dep_local": "2027-05-23T17:45",
+      "arr_local": "2027-05-23T19:13",
+      "dep_utc": "2027-05-23T14:45:00+00:00",
+      "arr_utc": "2027-05-23T17:13:00+00:00",
+      "duration_min": 148,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 790"
+      ],
+      "aircraft": null,
+      "price": 318.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "A3 604|2027-05-27T08:10",
+      "provider": "demo",
+      "dep": "BUD",
+      "arr": "TLV",
+      "dep_local": "2027-05-27T08:10",
+      "arr_local": "2027-05-27T13:16",
+      "dep_utc": "2027-05-27T06:10:00+00:00",
+      "arr_utc": "2027-05-27T10:16:00+00:00",
+      "duration_min": 246,
+      "airline": "Aegean",
+      "airline_code": "A3",
+      "flight_numbers": [
+       "A3 604"
+      ],
+      "aircraft": null,
+      "price": 539.0,
+      "currency": "ILS",
+      "seller": "Aegean",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    }
+   ],
+   "coverage_pct": 100
+  },
+  {
+   "code": "BCN",
+   "city": "ברצלונה",
+   "country": "ספרד",
+   "best": {
+    "dest": "BCN",
+    "days": 6,
+    "nights": 5,
+    "in_range": true,
+    "price_pp": 700,
+    "verified": true,
+    "out": {
+     "id": "W6 250|2027-05-16T06:50",
+     "provider": "demo",
+     "dep": "TLV",
+     "arr": "BCN",
+     "dep_local": "2027-05-16T06:50",
+     "arr_local": "2027-05-16T09:41",
+     "dep_utc": "2027-05-16T03:50:00+00:00",
+     "arr_utc": "2027-05-16T07:41:00+00:00",
+     "duration_min": 231,
+     "airline": "Wizz Air",
+     "airline_code": "W6",
+     "flight_numbers": [
+      "W6 250"
+     ],
+     "aircraft": null,
+     "price": 364.0,
+     "currency": "ILS",
+     "seller": "Wizz Air",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": false,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    },
+    "ret": {
+     "id": "LY 166|2027-05-21T09:20",
+     "provider": "demo",
+     "dep": "BCN",
+     "arr": "TLV",
+     "dep_local": "2027-05-21T09:20",
+     "arr_local": "2027-05-21T13:57",
+     "dep_utc": "2027-05-21T07:20:00+00:00",
+     "arr_utc": "2027-05-21T10:57:00+00:00",
+     "duration_min": 217,
+     "airline": "EL AL",
+     "airline_code": "LY",
+     "flight_numbers": [
+      "LY 166"
+     ],
+     "aircraft": null,
+     "price": 336.0,
+     "currency": "ILS",
+     "seller": "EL AL",
+     "seller_is_airline": true,
+     "fare_name": "Basic",
+     "bags": {
+      "personal_item": true,
+      "carry_on": true,
+      "checked": false,
+      "notes": [
+       "נתוני הדגמה"
+      ]
+     },
+     "checked_at": "2026-11-23T03:01:32+00:00"
+    }
+   },
+   "options": [
+    {
+     "dest": "BCN",
+     "days": 6,
+     "nights": 5,
+     "in_range": true,
+     "price_pp": 700,
+     "verified": true,
+     "out": {
+      "id": "W6 250|2027-05-16T06:50",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BCN",
+      "dep_local": "2027-05-16T06:50",
+      "arr_local": "2027-05-16T09:41",
+      "dep_utc": "2027-05-16T03:50:00+00:00",
+      "arr_utc": "2027-05-16T07:41:00+00:00",
+      "duration_min": 231,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 250"
+      ],
+      "aircraft": null,
+      "price": 364.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "LY 166|2027-05-21T09:20",
+      "provider": "demo",
+      "dep": "BCN",
+      "arr": "TLV",
+      "dep_local": "2027-05-21T09:20",
+      "arr_local": "2027-05-21T13:57",
+      "dep_utc": "2027-05-21T07:20:00+00:00",
+      "arr_utc": "2027-05-21T10:57:00+00:00",
+      "duration_min": 217,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 166"
+      ],
+      "aircraft": null,
+      "price": 336.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "BCN",
+     "days": 4,
+     "nights": 3,
+     "in_range": true,
+     "price_pp": 770,
+     "verified": true,
+     "out": {
+      "id": "W6 250|2027-05-18T11:20",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BCN",
+      "dep_local": "2027-05-18T11:20",
+      "arr_local": "2027-05-18T14:11",
+      "dep_utc": "2027-05-18T08:20:00+00:00",
+      "arr_utc": "2027-05-18T12:11:00+00:00",
+      "duration_min": 231,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 250"
+      ],
+      "aircraft": null,
+      "price": 434.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "LY 166|2027-05-21T09:20",
+      "provider": "demo",
+      "dep": "BCN",
+      "arr": "TLV",
+      "dep_local": "2027-05-21T09:20",
+      "arr_local": "2027-05-21T13:57",
+      "dep_utc": "2027-05-21T07:20:00+00:00",
+      "arr_utc": "2027-05-21T10:57:00+00:00",
+      "duration_min": 217,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 166"
+      ],
+      "aircraft": null,
+      "price": 336.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "BCN",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 889,
+     "verified": true,
+     "out": {
+      "id": "LY 566|2027-05-17T09:25",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BCN",
+      "dep_local": "2027-05-17T09:25",
+      "arr_local": "2027-05-17T12:16",
+      "dep_utc": "2027-05-17T06:25:00+00:00",
+      "arr_utc": "2027-05-17T10:16:00+00:00",
+      "duration_min": 231,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 566"
+      ],
+      "aircraft": null,
+      "price": 553.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "LY 166|2027-05-21T09:20",
+      "provider": "demo",
+      "dep": "BCN",
+      "arr": "TLV",
+      "dep_local": "2027-05-21T09:20",
+      "arr_local": "2027-05-21T13:57",
+      "dep_utc": "2027-05-21T07:20:00+00:00",
+      "arr_utc": "2027-05-21T10:57:00+00:00",
+      "duration_min": 217,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 166"
+      ],
+      "aircraft": null,
+      "price": 336.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "BCN",
+     "days": 8,
+     "nights": 7,
+     "in_range": true,
+     "price_pp": 998,
+     "verified": true,
+     "out": {
+      "id": "W6 250|2027-05-25T18:05",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BCN",
+      "dep_local": "2027-05-25T18:05",
+      "arr_local": "2027-05-25T20:56",
+      "dep_utc": "2027-05-25T15:05:00+00:00",
+      "arr_utc": "2027-05-25T18:56:00+00:00",
+      "duration_min": 231,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 250"
+      ],
+      "aircraft": null,
+      "price": 530.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "6H 437|2027-06-01T08:50",
+      "provider": "demo",
+      "dep": "BCN",
+      "arr": "TLV",
+      "dep_local": "2027-06-01T08:50",
+      "arr_local": "2027-06-01T13:27",
+      "dep_utc": "2027-06-01T06:50:00+00:00",
+      "arr_utc": "2027-06-01T10:27:00+00:00",
+      "duration_min": 217,
+      "airline": "Israir",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 437"
+      ],
+      "aircraft": null,
+      "price": 468.0,
+      "currency": "ILS",
+      "seller": "Israir",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    },
+    {
+     "dest": "BCN",
+     "days": 7,
+     "nights": 6,
+     "in_range": true,
+     "price_pp": 1020,
+     "verified": true,
+     "out": {
+      "id": "W6 250|2027-05-25T18:05",
+      "provider": "demo",
+      "dep": "TLV",
+      "arr": "BCN",
+      "dep_local": "2027-05-25T18:05",
+      "arr_local": "2027-05-25T20:56",
+      "dep_utc": "2027-05-25T15:05:00+00:00",
+      "arr_utc": "2027-05-25T18:56:00+00:00",
+      "duration_min": 231,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 250"
+      ],
+      "aircraft": null,
+      "price": 530.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": false,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     },
+     "ret": {
+      "id": "LY 166|2027-05-31T11:15",
+      "provider": "demo",
+      "dep": "BCN",
+      "arr": "TLV",
+      "dep_local": "2027-05-31T11:15",
+      "arr_local": "2027-05-31T15:52",
+      "dep_utc": "2027-05-31T09:15:00+00:00",
+      "arr_utc": "2027-05-31T12:52:00+00:00",
+      "duration_min": 217,
+      "airline": "EL AL",
+      "airline_code": "LY",
+      "flight_numbers": [
+       "LY 166"
+      ],
+      "aircraft": null,
+      "price": 490.0,
+      "currency": "ILS",
+      "seller": "EL AL",
+      "seller_is_airline": true,
+      "fare_name": "Basic",
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": false,
+       "notes": [
+        "נתוני הדגמה"
+       ]
+      },
+      "checked_at": "2026-11-23T03:01:32+00:00"
+     }
+    }
+   ],
+   "coverage_pct": 100
+  }
+ ]
+}

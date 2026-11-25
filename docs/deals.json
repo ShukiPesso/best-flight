@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T14:06:25+00:00",
+ "generated_at": "2026-11-25T13:19:13+00:00",
  "demo": false,
  "currency": "ILS",
  "family_size": 5,
@@ -231,25 +231,25 @@
      "days": 5,
      "nights": 4,
      "in_range": true,
-     "price_pp": 423,
+     "price_pp": 424,
      "verified": false,
      "out": {
-      "id": "6H 589|2027-05-02T21:15",
+      "id": "IZ 163|2027-05-02T08:15",
       "provider": "serpapi",
       "dep": "TLV",
       "arr": "LCA",
-      "dep_local": "2027-05-02T21:15",
-      "arr_local": "2027-05-02T22:20",
-      "dep_utc": "2027-05-02T18:15:00+00:00",
-      "arr_utc": "2027-05-02T19:20:00+00:00",
-      "duration_min": 65,
-      "airline": "Israir Airlines",
-      "airline_code": "6H",
+      "dep_local": "2027-05-02T08:15",
+      "arr_local": "2027-05-02T09:15",
+      "dep_utc": "2027-05-02T05:15:00+00:00",
+      "arr_utc": "2027-05-02T06:15:00+00:00",
+      "duration_min": 60,
+      "airline": "Arkia",
+      "airline_code": "IZ",
       "flight_numbers": [
-       "6H 589"
+       "IZ 163"
       ],
       "aircraft": "Airbus A320",
-      "price": 218.0,
+      "price": 219.0,
       "currency": "ILS",
       "seller": null,
       "seller_is_airline": null,
@@ -1243,9 +1243,75 @@
       },
       "checked_at": "2026-11-23T03:09:16+00:00"
      }
+    },
+    {
+     "dest": "PRG",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 1198,
+     "verified": false,
+     "out": {
+      "id": "IZ 281|2027-05-02T14:45",
+      "provider": "serpapi",
+      "dep": "TLV",
+      "arr": "PRG",
+      "dep_local": "2027-05-02T14:45",
+      "arr_local": "2027-05-02T17:50",
+      "dep_utc": "2027-05-02T11:45:00+00:00",
+      "arr_utc": "2027-05-02T15:50:00+00:00",
+      "duration_min": 245,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 281"
+      ],
+      "aircraft": "Airbus A320",
+      "price": 541.0,
+      "currency": "ILS",
+      "seller": null,
+      "seller_is_airline": null,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": null,
+       "checked": null,
+       "notes": []
+      },
+      "checked_at": "2026-11-23T03:09:16+00:00"
+     },
+     "ret": {
+      "id": "QS 1284|2027-05-06T12:45",
+      "provider": "serpapi",
+      "dep": "PRG",
+      "arr": "TLV",
+      "dep_local": "2027-05-06T12:45",
+      "arr_local": "2027-05-06T17:35",
+      "dep_utc": "2027-05-06T10:45:00+00:00",
+      "arr_utc": "2027-05-06T14:35:00+00:00",
+      "duration_min": 230,
+      "airline": "Smartwings",
+      "airline_code": "QS",
+      "flight_numbers": [
+       "QS 1284"
+      ],
+      "aircraft": "Boeing 737",
+      "price": 657.0,
+      "currency": "ILS",
+      "seller": null,
+      "seller_is_airline": null,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": null,
+       "checked": null,
+       "notes": []
+      },
+      "checked_at": "2026-11-25T13:19:13+00:00"
+     }
     }
    ],
-   "coverage_pct": 13
+   "coverage_pct": 17
   },
   {
    "code": "FCO",
@@ -1256,25 +1322,25 @@
     "days": 4,
     "nights": 3,
     "in_range": true,
-    "price_pp": 1267,
+    "price_pp": 1238,
     "verified": false,
     "out": {
-     "id": "6H 381|2027-05-02T17:20",
+     "id": "6H 343|2027-05-03T16:50",
      "provider": "serpapi",
      "dep": "TLV",
      "arr": "FCO",
-     "dep_local": "2027-05-02T17:20",
-     "arr_local": "2027-05-02T20:05",
-     "dep_utc": "2027-05-02T14:20:00+00:00",
-     "arr_utc": "2027-05-02T18:05:00+00:00",
+     "dep_local": "2027-05-03T16:50",
+     "arr_local": "2027-05-03T19:35",
+     "dep_utc": "2027-05-03T13:50:00+00:00",
+     "arr_utc": "2027-05-03T17:35:00+00:00",
      "duration_min": 225,
      "airline": "Israir Airlines",
      "airline_code": "6H",
      "flight_numbers": [
-      "6H 381"
+      "6H 343"
      ],
      "aircraft": "Airbus A320",
-     "price": 572.0,
+     "price": 545.0,
      "currency": "ILS",
      "seller": null,
      "seller_is_airline": null,
@@ -1288,22 +1354,22 @@
      "checked_at": "2026-11-23T03:09:16+00:00"
     },
     "ret": {
-     "id": "6H 350|2027-05-05T22:00",
+     "id": "6H 382|2027-05-06T21:40",
      "provider": "serpapi",
      "dep": "FCO",
      "arr": "TLV",
-     "dep_local": "2027-05-05T22:00",
-     "arr_local": "2027-05-06T02:20",
-     "dep_utc": "2027-05-05T20:00:00+00:00",
-     "arr_utc": "2027-05-05T23:20:00+00:00",
+     "dep_local": "2027-05-06T21:40",
+     "arr_local": "2027-05-07T02:00",
+     "dep_utc": "2027-05-06T19:40:00+00:00",
+     "arr_utc": "2027-05-06T23:00:00+00:00",
      "duration_min": 200,
      "airline": "Israir Airlines",
      "airline_code": "6H",
      "flight_numbers": [
-      "6H 350"
+      "6H 382"
      ],
      "aircraft": "Airbus A320",
-     "price": 695.0,
+     "price": 693.0,
      "currency": "ILS",
      "seller": null,
      "seller_is_airline": null,
@@ -1314,7 +1380,7 @@
       "checked": null,
       "notes": []
      },
-     "checked_at": "2026-11-23T03:09:16+00:00"
+     "checked_at": "2026-11-25T13:19:13+00:00"
     }
    },
    "options": [
@@ -1323,7 +1389,73 @@
      "days": 4,
      "nights": 3,
      "in_range": true,
-     "price_pp": 1267,
+     "price_pp": 1238,
+     "verified": false,
+     "out": {
+      "id": "6H 343|2027-05-03T16:50",
+      "provider": "serpapi",
+      "dep": "TLV",
+      "arr": "FCO",
+      "dep_local": "2027-05-03T16:50",
+      "arr_local": "2027-05-03T19:35",
+      "dep_utc": "2027-05-03T13:50:00+00:00",
+      "arr_utc": "2027-05-03T17:35:00+00:00",
+      "duration_min": 225,
+      "airline": "Israir Airlines",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 343"
+      ],
+      "aircraft": "Airbus A320",
+      "price": 545.0,
+      "currency": "ILS",
+      "seller": null,
+      "seller_is_airline": null,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": null,
+       "checked": null,
+       "notes": []
+      },
+      "checked_at": "2026-11-23T03:09:16+00:00"
+     },
+     "ret": {
+      "id": "6H 382|2027-05-06T21:40",
+      "provider": "serpapi",
+      "dep": "FCO",
+      "arr": "TLV",
+      "dep_local": "2027-05-06T21:40",
+      "arr_local": "2027-05-07T02:00",
+      "dep_utc": "2027-05-06T19:40:00+00:00",
+      "arr_utc": "2027-05-06T23:00:00+00:00",
+      "duration_min": 200,
+      "airline": "Israir Airlines",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 382"
+      ],
+      "aircraft": "Airbus A320",
+      "price": 693.0,
+      "currency": "ILS",
+      "seller": null,
+      "seller_is_airline": null,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": null,
+       "checked": null,
+       "notes": []
+      },
+      "checked_at": "2026-11-25T13:19:13+00:00"
+     }
+    },
+    {
+     "dest": "FCO",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 1265,
      "verified": false,
      "out": {
       "id": "6H 381|2027-05-02T17:20",
@@ -1355,22 +1487,22 @@
       "checked_at": "2026-11-23T03:09:16+00:00"
      },
      "ret": {
-      "id": "6H 350|2027-05-05T22:00",
+      "id": "6H 382|2027-05-06T21:40",
       "provider": "serpapi",
       "dep": "FCO",
       "arr": "TLV",
-      "dep_local": "2027-05-05T22:00",
-      "arr_local": "2027-05-06T02:20",
-      "dep_utc": "2027-05-05T20:00:00+00:00",
-      "arr_utc": "2027-05-05T23:20:00+00:00",
+      "dep_local": "2027-05-06T21:40",
+      "arr_local": "2027-05-07T02:00",
+      "dep_utc": "2027-05-06T19:40:00+00:00",
+      "arr_utc": "2027-05-06T23:00:00+00:00",
       "duration_min": 200,
       "airline": "Israir Airlines",
       "airline_code": "6H",
       "flight_numbers": [
-       "6H 350"
+       "6H 382"
       ],
       "aircraft": "Airbus A320",
-      "price": 695.0,
+      "price": 693.0,
       "currency": "ILS",
       "seller": null,
       "seller_is_airline": null,
@@ -1381,11 +1513,11 @@
        "checked": null,
        "notes": []
       },
-      "checked_at": "2026-11-23T03:09:16+00:00"
+      "checked_at": "2026-11-25T13:19:13+00:00"
      }
     }
    ],
-   "coverage_pct": 13
+   "coverage_pct": 17
   },
   {
    "code": "BCN",
@@ -1523,9 +1655,75 @@
       },
       "checked_at": "2026-11-23T13:27:35+00:00"
      }
+    },
+    {
+     "dest": "BCN",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 2116,
+     "verified": false,
+     "out": {
+      "id": "IZ 271|2027-05-02T16:40",
+      "provider": "serpapi",
+      "dep": "TLV",
+      "arr": "BCN",
+      "dep_local": "2027-05-02T16:40",
+      "arr_local": "2027-05-02T20:20",
+      "dep_utc": "2027-05-02T13:40:00+00:00",
+      "arr_utc": "2027-05-02T18:20:00+00:00",
+      "duration_min": 280,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 271"
+      ],
+      "aircraft": "Airbus A320",
+      "price": 893.0,
+      "currency": "ILS",
+      "seller": null,
+      "seller_is_airline": null,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": null,
+       "checked": null,
+       "notes": []
+      },
+      "checked_at": "2026-11-23T03:09:16+00:00"
+     },
+     "ret": {
+      "id": "IZ 272|2027-05-06T21:50",
+      "provider": "serpapi",
+      "dep": "BCN",
+      "arr": "TLV",
+      "dep_local": "2027-05-06T21:50",
+      "arr_local": "2027-05-07T03:05",
+      "dep_utc": "2027-05-06T19:50:00+00:00",
+      "arr_utc": "2027-05-07T00:05:00+00:00",
+      "duration_min": 255,
+      "airline": "Arkia",
+      "airline_code": "IZ",
+      "flight_numbers": [
+       "IZ 272"
+      ],
+      "aircraft": "Airbus A320",
+      "price": 1223.0,
+      "currency": "ILS",
+      "seller": null,
+      "seller_is_airline": null,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": null,
+       "checked": null,
+       "notes": []
+      },
+      "checked_at": "2026-11-25T13:19:13+00:00"
+     }
     }
    ],
-   "coverage_pct": 13
+   "coverage_pct": 17
   },
   {
    "code": "LHR",

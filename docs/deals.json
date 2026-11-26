@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T13:19:13+00:00",
+ "generated_at": "2026-11-26T12:58:57+00:00",
  "demo": false,
  "currency": "ILS",
  "family_size": 5,
@@ -35,11 +35,11 @@
    "country": "קפריסין",
    "best": {
     "dest": "LCA",
-    "days": 4,
-    "nights": 3,
+    "days": 5,
+    "nights": 4,
     "in_range": true,
-    "price_pp": 388,
-    "verified": true,
+    "price_pp": 367,
+    "verified": false,
     "out": {
      "id": "W6 4926|2027-05-03T17:35",
      "provider": "serpapi",
@@ -85,14 +85,14 @@
      ]
     },
     "ret": {
-     "id": "W6 4921|2027-05-06T06:00",
+     "id": "W6 4921|2027-05-07T06:00",
      "provider": "serpapi",
      "dep": "LCA",
      "arr": "TLV",
-     "dep_local": "2027-05-06T06:00",
-     "arr_local": "2027-05-06T07:05",
-     "dep_utc": "2027-05-06T03:00:00+00:00",
-     "arr_utc": "2027-05-06T04:05:00+00:00",
+     "dep_local": "2027-05-07T06:00",
+     "arr_local": "2027-05-07T07:05",
+     "dep_utc": "2027-05-07T03:00:00+00:00",
+     "arr_utc": "2027-05-07T04:05:00+00:00",
      "duration_min": 65,
      "airline": "Wizz Air",
      "airline_code": "W6",
@@ -100,10 +100,10 @@
       "W6 4921"
      ],
      "aircraft": "Airbus A321",
-     "price": 205.0,
+     "price": 184.0,
      "currency": "ILS",
-     "seller": "Wizz Air",
-     "seller_is_airline": true,
+     "seller": null,
+     "seller_is_airline": null,
      "fare_name": null,
      "bags": {
       "personal_item": true,
@@ -111,25 +111,91 @@
       "checked": null,
       "notes": []
      },
-     "checked_at": "2026-11-24T14:06:25+00:00",
-     "verified_at": "2026-11-24T14:06:53.762304+00:00",
-     "google_price": 206.0,
-     "fares": [
-      {
-       "price": 205.0,
-       "seller": "Wizz Air",
-       "fare_name": null,
-       "bags": {
-        "personal_item": true,
-        "carry_on": null,
-        "checked": null,
-        "notes": []
-       }
-      }
-     ]
+     "checked_at": "2026-11-26T12:58:57+00:00"
     }
    },
    "options": [
+    {
+     "dest": "LCA",
+     "days": 5,
+     "nights": 4,
+     "in_range": true,
+     "price_pp": 367,
+     "verified": false,
+     "out": {
+      "id": "W6 4926|2027-05-03T17:35",
+      "provider": "serpapi",
+      "dep": "TLV",
+      "arr": "LCA",
+      "dep_local": "2027-05-03T17:35",
+      "arr_local": "2027-05-03T18:40",
+      "dep_utc": "2027-05-03T14:35:00+00:00",
+      "arr_utc": "2027-05-03T15:40:00+00:00",
+      "duration_min": 65,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 4926"
+      ],
+      "aircraft": "Airbus A321",
+      "price": 183.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": null,
+       "checked": null,
+       "notes": []
+      },
+      "checked_at": "2026-11-23T03:09:16+00:00",
+      "verified_at": "2026-11-24T14:06:52.675980+00:00",
+      "google_price": 184.0,
+      "fares": [
+       {
+        "price": 183.0,
+        "seller": "Wizz Air",
+        "fare_name": null,
+        "bags": {
+         "personal_item": true,
+         "carry_on": null,
+         "checked": null,
+         "notes": []
+        }
+       }
+      ]
+     },
+     "ret": {
+      "id": "W6 4921|2027-05-07T06:00",
+      "provider": "serpapi",
+      "dep": "LCA",
+      "arr": "TLV",
+      "dep_local": "2027-05-07T06:00",
+      "arr_local": "2027-05-07T07:05",
+      "dep_utc": "2027-05-07T03:00:00+00:00",
+      "arr_utc": "2027-05-07T04:05:00+00:00",
+      "duration_min": 65,
+      "airline": "Wizz Air",
+      "airline_code": "W6",
+      "flight_numbers": [
+       "W6 4921"
+      ],
+      "aircraft": "Airbus A321",
+      "price": 184.0,
+      "currency": "ILS",
+      "seller": null,
+      "seller_is_airline": null,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": null,
+       "checked": null,
+       "notes": []
+      },
+      "checked_at": "2026-11-26T12:58:57+00:00"
+     }
+    },
     {
      "dest": "LCA",
      "days": 4,
@@ -228,10 +294,10 @@
     },
     {
      "dest": "LCA",
-     "days": 5,
-     "nights": 4,
+     "days": 6,
+     "nights": 5,
      "in_range": true,
-     "price_pp": 424,
+     "price_pp": 403,
      "verified": false,
      "out": {
       "id": "IZ 163|2027-05-02T08:15",
@@ -263,14 +329,14 @@
       "checked_at": "2026-11-23T03:09:16+00:00"
      },
      "ret": {
-      "id": "W6 4921|2027-05-06T06:00",
+      "id": "W6 4921|2027-05-07T06:00",
       "provider": "serpapi",
       "dep": "LCA",
       "arr": "TLV",
-      "dep_local": "2027-05-06T06:00",
-      "arr_local": "2027-05-06T07:05",
-      "dep_utc": "2027-05-06T03:00:00+00:00",
-      "arr_utc": "2027-05-06T04:05:00+00:00",
+      "dep_local": "2027-05-07T06:00",
+      "arr_local": "2027-05-07T07:05",
+      "dep_utc": "2027-05-07T03:00:00+00:00",
+      "arr_utc": "2027-05-07T04:05:00+00:00",
       "duration_min": 65,
       "airline": "Wizz Air",
       "airline_code": "W6",
@@ -278,10 +344,10 @@
        "W6 4921"
       ],
       "aircraft": "Airbus A321",
-      "price": 205.0,
+      "price": 184.0,
       "currency": "ILS",
-      "seller": "Wizz Air",
-      "seller_is_airline": true,
+      "seller": null,
+      "seller_is_airline": null,
       "fare_name": null,
       "bags": {
        "personal_item": true,
@@ -289,26 +355,11 @@
        "checked": null,
        "notes": []
       },
-      "checked_at": "2026-11-24T14:06:25+00:00",
-      "verified_at": "2026-11-24T14:06:53.762304+00:00",
-      "google_price": 206.0,
-      "fares": [
-       {
-        "price": 205.0,
-        "seller": "Wizz Air",
-        "fare_name": null,
-        "bags": {
-         "personal_item": true,
-         "carry_on": null,
-         "checked": null,
-         "notes": []
-        }
-       }
-      ]
+      "checked_at": "2026-11-26T12:58:57+00:00"
      }
     }
    ],
-   "coverage_pct": 17
+   "coverage_pct": 20
   },
   {
    "code": "ATH",
@@ -520,17 +571,17 @@
      "days": 4,
      "nights": 3,
      "in_range": true,
-     "price_pp": 512,
+     "price_pp": 498,
      "verified": true,
      "out": {
-      "id": "W4 8401|2027-05-03T12:55",
+      "id": "W4 8401|2027-05-04T12:55",
       "provider": "serpapi",
       "dep": "TLV",
       "arr": "ATH",
-      "dep_local": "2027-05-03T12:55",
-      "arr_local": "2027-05-03T15:15",
-      "dep_utc": "2027-05-03T09:55:00+00:00",
-      "arr_utc": "2027-05-03T12:15:00+00:00",
+      "dep_local": "2027-05-04T12:55",
+      "arr_local": "2027-05-04T15:15",
+      "dep_utc": "2027-05-04T09:55:00+00:00",
+      "arr_utc": "2027-05-04T12:15:00+00:00",
       "duration_min": 140,
       "airline": "Wizz Air",
       "airline_code": "W4",
@@ -538,7 +589,7 @@
        "W4 8401"
       ],
       "aircraft": "Airbus A321neo",
-      "price": 293.0,
+      "price": 220.0,
       "currency": "ILS",
       "seller": "Wizz Air",
       "seller_is_airline": true,
@@ -550,11 +601,11 @@
        "notes": []
       },
       "checked_at": "2026-11-23T03:09:16+00:00",
-      "verified_at": "2026-11-23T13:29:03.266991+00:00",
-      "google_price": 294.0,
+      "verified_at": "2026-11-26T12:59:28.333785+00:00",
+      "google_price": 221.0,
       "fares": [
        {
-        "price": 293.0,
+        "price": 220.0,
         "seller": "Wizz Air",
         "fare_name": null,
         "bags": {
@@ -567,14 +618,14 @@
       ]
      },
      "ret": {
-      "id": "W4 8402|2027-05-06T09:55",
+      "id": "W4 8402|2027-05-07T09:55",
       "provider": "serpapi",
       "dep": "ATH",
       "arr": "TLV",
-      "dep_local": "2027-05-06T09:55",
-      "arr_local": "2027-05-06T12:00",
-      "dep_utc": "2027-05-06T06:55:00+00:00",
-      "arr_utc": "2027-05-06T09:00:00+00:00",
+      "dep_local": "2027-05-07T09:55",
+      "arr_local": "2027-05-07T12:00",
+      "dep_utc": "2027-05-07T06:55:00+00:00",
+      "arr_utc": "2027-05-07T09:00:00+00:00",
       "duration_min": 125,
       "airline": "Wizz Air",
       "airline_code": "W4",
@@ -582,7 +633,7 @@
        "W4 8402"
       ],
       "aircraft": "Airbus A321neo",
-      "price": 219.0,
+      "price": 278.0,
       "currency": "ILS",
       "seller": "Wizz Air",
       "seller_is_airline": true,
@@ -593,12 +644,12 @@
        "checked": null,
        "notes": []
       },
-      "checked_at": "2026-11-23T13:27:35+00:00",
-      "verified_at": "2026-11-23T13:29:01.550572+00:00",
-      "google_price": 220.0,
+      "checked_at": "2026-11-26T12:58:57+00:00",
+      "verified_at": "2026-11-26T12:59:30.763283+00:00",
+      "google_price": 279.0,
       "fares": [
        {
-        "price": 219.0,
+        "price": 278.0,
         "seller": "Wizz Air",
         "fare_name": null,
         "bags": {
@@ -616,7 +667,107 @@
      "days": 6,
      "nights": 5,
      "in_range": true,
-     "price_pp": 745,
+     "price_pp": 545,
+     "verified": true,
+     "out": {
+      "id": "6H 563|2027-05-02T21:25",
+      "provider": "serpapi",
+      "dep": "TLV",
+      "arr": "ATH",
+      "dep_local": "2027-05-02T21:25",
+      "arr_local": "2027-05-02T23:40",
+      "dep_utc": "2027-05-02T18:25:00+00:00",
+      "arr_utc": "2027-05-02T20:40:00+00:00",
+      "duration_min": 135,
+      "airline": "Israir Airlines",
+      "airline_code": "6H",
+      "flight_numbers": [
+       "6H 563"
+      ],
+      "aircraft": "Airbus A320",
+      "price": 267.0,
+      "currency": "ILS",
+      "seller": "Israir Airlines",
+      "seller_is_airline": true,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": true,
+       "checked": null,
+       "notes": [
+        "1 free carry-on"
+       ]
+      },
+      "checked_at": "2026-11-23T03:09:16+00:00",
+      "verified_at": "2026-11-23T03:16:11.129314+00:00",
+      "google_price": 268.0,
+      "fares": [
+       {
+        "price": 267.0,
+        "seller": "Israir Airlines",
+        "fare_name": null,
+        "bags": {
+         "personal_item": true,
+         "carry_on": true,
+         "checked": null,
+         "notes": [
+          "1 free carry-on"
+         ]
+        }
+       }
+      ]
+     },
+     "ret": {
+      "id": "W4 8402|2027-05-07T09:55",
+      "provider": "serpapi",
+      "dep": "ATH",
+      "arr": "TLV",
+      "dep_local": "2027-05-07T09:55",
+      "arr_local": "2027-05-07T12:00",
+      "dep_utc": "2027-05-07T06:55:00+00:00",
+      "arr_utc": "2027-05-07T09:00:00+00:00",
+      "duration_min": 125,
+      "airline": "Wizz Air",
+      "airline_code": "W4",
+      "flight_numbers": [
+       "W4 8402"
+      ],
+      "aircraft": "Airbus A321neo",
+      "price": 278.0,
+      "currency": "ILS",
+      "seller": "Wizz Air",
+      "seller_is_airline": true,
+      "fare_name": null,
+      "bags": {
+       "personal_item": true,
+       "carry_on": null,
+       "checked": null,
+       "notes": []
+      },
+      "checked_at": "2026-11-26T12:58:57+00:00",
+      "verified_at": "2026-11-26T12:59:30.763283+00:00",
+      "google_price": 279.0,
+      "fares": [
+       {
+        "price": 278.0,
+        "seller": "Wizz Air",
+        "fare_name": null,
+        "bags": {
+         "personal_item": true,
+         "carry_on": null,
+         "checked": null,
+         "notes": []
+        }
+       }
+      ]
+     }
+    },
+    {
+     "dest": "ATH",
+     "days": 7,
+     "nights": 6,
+     "in_range": true,
+     "price_pp": 804,
      "verified": false,
      "out": {
       "id": "GQ 721|2027-05-01T23:30",
@@ -648,14 +799,14 @@
       "checked_at": "2026-11-23T03:09:16+00:00"
      },
      "ret": {
-      "id": "W4 8402|2027-05-06T09:55",
+      "id": "W4 8402|2027-05-07T09:55",
       "provider": "serpapi",
       "dep": "ATH",
       "arr": "TLV",
-      "dep_local": "2027-05-06T09:55",
-      "arr_local": "2027-05-06T12:00",
-      "dep_utc": "2027-05-06T06:55:00+00:00",
-      "arr_utc": "2027-05-06T09:00:00+00:00",
+      "dep_local": "2027-05-07T09:55",
+      "arr_local": "2027-05-07T12:00",
+      "dep_utc": "2027-05-07T06:55:00+00:00",
+      "arr_utc": "2027-05-07T09:00:00+00:00",
       "duration_min": 125,
       "airline": "Wizz Air",
       "airline_code": "W4",
@@ -663,7 +814,7 @@
        "W4 8402"
       ],
       "aircraft": "Airbus A321neo",
-      "price": 219.0,
+      "price": 278.0,
       "currency": "ILS",
       "seller": "Wizz Air",
       "seller_is_airline": true,
@@ -674,12 +825,12 @@
        "checked": null,
        "notes": []
       },
-      "checked_at": "2026-11-23T13:27:35+00:00",
-      "verified_at": "2026-11-23T13:29:01.550572+00:00",
-      "google_price": 220.0,
+      "checked_at": "2026-11-26T12:58:57+00:00",
+      "verified_at": "2026-11-26T12:59:30.763283+00:00",
+      "google_price": 279.0,
       "fares": [
        {
-        "price": 219.0,
+        "price": 278.0,
         "seller": "Wizz Air",
         "fare_name": null,
         "bags": {
@@ -693,7 +844,7 @@
      }
     }
    ],
-   "coverage_pct": 17
+   "coverage_pct": 20
   },
   {
    "code": "RHO",
@@ -1731,10 +1882,10 @@
    "country": "בריטניה",
    "best": {
     "dest": "LHR",
-    "days": 3,
-    "nights": 2,
-    "in_range": false,
-    "price_pp": 3477,
+    "days": 4,
+    "nights": 3,
+    "in_range": true,
+    "price_pp": 3478,
     "verified": false,
     "out": {
      "id": "BA 405|2027-05-03T06:00",
@@ -1766,22 +1917,22 @@
      "checked_at": "2026-11-23T03:09:16+00:00"
     },
     "ret": {
-     "id": "LY 318|2027-05-05T22:10",
+     "id": "LY 316|2027-05-06T15:15",
      "provider": "serpapi",
      "dep": "LHR",
      "arr": "TLV",
-     "dep_local": "2027-05-05T22:10",
-     "arr_local": "2027-05-06T05:05",
-     "dep_utc": "2027-05-05T21:10:00+00:00",
-     "arr_utc": "2027-05-06T02:05:00+00:00",
-     "duration_min": 295,
+     "dep_local": "2027-05-06T15:15",
+     "arr_local": "2027-05-06T22:00",
+     "dep_utc": "2027-05-06T14:15:00+00:00",
+     "arr_utc": "2027-05-06T19:00:00+00:00",
+     "duration_min": 285,
      "airline": "El Al",
      "airline_code": "LY",
      "flight_numbers": [
-      "LY 318"
+      "LY 316"
      ],
      "aircraft": "Boeing 787",
-     "price": 1553.0,
+     "price": 1554.0,
      "currency": "ILS",
      "seller": null,
      "seller_is_airline": null,
@@ -1792,16 +1943,16 @@
       "checked": null,
       "notes": []
      },
-     "checked_at": "2026-11-23T13:27:35+00:00"
+     "checked_at": "2026-11-26T12:58:57+00:00"
     }
    },
    "options": [
     {
      "dest": "LHR",
-     "days": 3,
-     "nights": 2,
-     "in_range": false,
-     "price_pp": 3477,
+     "days": 4,
+     "nights": 3,
+     "in_range": true,
+     "price_pp": 3478,
      "verified": false,
      "out": {
       "id": "BA 405|2027-05-03T06:00",
@@ -1833,22 +1984,22 @@
       "checked_at": "2026-11-23T03:09:16+00:00"
      },
      "ret": {
-      "id": "LY 318|2027-05-05T22:10",
+      "id": "LY 316|2027-05-06T15:15",
       "provider": "serpapi",
       "dep": "LHR",
       "arr": "TLV",
-      "dep_local": "2027-05-05T22:10",
-      "arr_local": "2027-05-06T05:05",
-      "dep_utc": "2027-05-05T21:10:00+00:00",
-      "arr_utc": "2027-05-06T02:05:00+00:00",
-      "duration_min": 295,
+      "dep_local": "2027-05-06T15:15",
+      "arr_local": "2027-05-06T22:00",
+      "dep_utc": "2027-05-06T14:15:00+00:00",
+      "arr_utc": "2027-05-06T19:00:00+00:00",
+      "duration_min": 285,
       "airline": "El Al",
       "airline_code": "LY",
       "flight_numbers": [
-       "LY 318"
+       "LY 316"
       ],
       "aircraft": "Boeing 787",
-      "price": 1553.0,
+      "price": 1554.0,
       "currency": "ILS",
       "seller": null,
       "seller_is_airline": null,
@@ -1859,11 +2010,11 @@
        "checked": null,
        "notes": []
       },
-      "checked_at": "2026-11-23T13:27:35+00:00"
+      "checked_at": "2026-11-26T12:58:57+00:00"
      }
     }
    ],
-   "coverage_pct": 13
+   "coverage_pct": 17
   }
  ]
 }

@@ -32,7 +32,8 @@ main{max-width:900px;margin:auto;padding:8px 16px 40px}
 .days{background:var(--chip);border-radius:999px;padding:4px 10px;white-space:nowrap;font-size:14px}
 .none{opacity:.6;cursor:default}
 .badge{display:inline-block;font-size:11px;border-radius:6px;padding:1px 6px;margin-inline-start:6px;vertical-align:middle}
-.b-ok{background:#e3f5ea;color:var(--good)} .b-unv{background:#fff1dc;color:var(--warn)} .b-flex{background:#e8efff;color:var(--accent)}
+.b-ok{background:#e3f5ea;color:var(--good)} .b-unv{background:#fff1dc;color:var(--warn)}
+.warn{color:var(--warn);font-size:13px;margin-top:6px} .b-flex{background:#e8efff;color:var(--accent)}
 @media (prefers-color-scheme: dark){.b-ok{background:#163222}.b-unv{background:#3a2a10}.b-flex{background:#18284a}}
 dialog{border:none;border-radius:14px;padding:0;max-width:760px;width:calc(100% - 24px);background:var(--card);color:var(--text)}
 dialog::backdrop{background:rgba(0,0,0,.45)}
@@ -98,13 +99,17 @@ function legHtml(title,l){
    <div class="kv">משך ${dur(l.duration_min)} · ${esc(l.airline)} ${esc(l.flight_numbers.join(", "))}${l.aircraft?" · "+esc(l.aircraft):""}</div>
    <div class="kv">${money(l.price)} לכיוון${l.fare_name?" · תעריף "+esc(l.fare_name):""}${site?` · <a href="${site}" target="_blank" rel="noopener">לאתר החברה</a>`:""}</div>
    ${fares}
+   ${l.check_on_site?`<div class="warn">⚠️ גוגל לא מציג את ${esc(l.airline)} כמוכרת ישירה. המחיר כאן הוא הזול בגוגל וייתכן שהוא של סוכן. כדאי לבדוק את המחיר באתר ${esc(l.airline)}${site?` (<a href="${site}" target="_blank" rel="noopener">לאתר</a>)`:""}.</div>`:""}
    <div class="bags">${bag("תיק אישי",l.bags.personal_item)}${bag("טרולי",l.bags.carry_on)}${bag("מזוודה",l.bags.checked)}</div>
    ${(l.bags.notes||[]).length?`<div class="kv" style="margin-top:4px">${l.bags.notes.map(esc).join(" · ")}</div>`:""}
    <div class="kv" style="margin-top:4px">נבדק: ${new Date(l.checked_at).toLocaleString("he-IL")}</div>
   </div>`;
 }
 function badges(t){
-  return (t.verified?`<span class="badge b-ok">מחיר חברת התעופה</span>`:`<span class="badge b-unv">טרם אומת מול החברה</span>`)
+  const cs=(t.check_site||[]);
+  return (t.verified?`<span class="badge b-ok">מחיר חברת התעופה</span>`
+    :cs.length?`<span class="badge b-unv">לבדוק באתר ${esc(cs.join(", "))}</span>`
+    :`<span class="badge b-unv">טרם אומת מול החברה</span>`)
    +(t.in_range?"":`<span class="badge b-flex">מחוץ לטווח הימים, דיל משתלם</span>`);
 }
 function openDest(code){
@@ -120,11 +125,11 @@ function openDest(code){
 function render(){
   const g=new Date(DATA.generated_at);
   const td=DATA.trip_days;
-  document.getElementById("sub").textContent=`עודכן ${g.toLocaleString("he-IL")} · טיסות ישירות הלוך-חזור · ${td.min}–${td.max} ימים · יציאה ${fmtD(DATA.window[0])}–${fmtD(DATA.window[1])} · ללא שבתות וחגים`;
+  document.getElementById("sub").textContent=`עודכן ${g.toLocaleString("he-IL")} · טיסות ישירות הלוך-חזור · ${td.min}–${td.max} ימים · יציאה מ-${fmtD(DATA.window[0])} עד ${fmtD(DATA.window[1])} · ללא שבתות וחגים`;
   if(DATA.demo) document.getElementById("banner").innerHTML=`<div class="banner">⚠️ אלה נתוני הדגמה מומצאים, לא מחירים אמיתיים. הוסיפו מפתח API כדי לקבל מחירים אמיתיים.</div>`;
   document.getElementById("list").innerHTML=DATA.destinations.map(d=>d.best?`
    <button class="row" onclick="openDest('${esc(d.code)}')">
-    <div><div class="city">${esc(d.city)}${d.best.verified?"":' <span class="badge b-unv">טרם אומת</span>'}</div><div class="country">${esc(d.country)} · ${esc(d.best.out.airline)}${d.best.out.dep==="ETM"?" · מרמון":""}</div></div>
+    <div><div class="city">${esc(d.city)}${d.best.verified?"":(d.best.check_site||[]).length?` <span class="badge b-unv">לבדוק באתר ${esc(d.best.check_site.join(", "))}</span>`:' <span class="badge b-unv">טרם אומת</span>'}</div><div class="country">${esc(d.country)} · ${esc(d.best.out.airline)}${d.best.out.dep==="ETM"?" · מרמון":""}</div></div>
     <div class="days">${daysLabel(d.best)}</div>
     <div class="price">${money(d.best.price_pp)}<small>לאדם</small></div>
    </button>`:`

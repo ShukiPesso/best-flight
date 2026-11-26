@@ -35,28 +35,31 @@
    "country": "צרפת",
    "best": {
     "dest": "CDG",
-    "days": 4,
-    "nights": 3,
+    "days": 3,
+    "nights": 2,
     "in_range": true,
-    "price_pp": 1344,
+    "price_pp": 1289,
     "verified": false,
+    "check_site": [
+     "Arkia"
+    ],
     "out": {
-     "id": "IZ 743|2027-06-06T16:30",
+     "id": "IZ 741|2027-06-07T10:30",
      "provider": "serpapi",
      "dep": "TLV",
      "arr": "CDG",
-     "dep_local": "2027-06-06T16:30",
-     "arr_local": "2027-06-06T20:30",
-     "dep_utc": "2027-06-06T13:30:00+00:00",
-     "arr_utc": "2027-06-06T18:30:00+00:00",
+     "dep_local": "2027-06-07T10:30",
+     "arr_local": "2027-06-07T14:30",
+     "dep_utc": "2027-06-07T07:30:00+00:00",
+     "arr_utc": "2027-06-07T12:30:00+00:00",
      "duration_min": 300,
      "airline": "Arkia",
      "airline_code": "IZ",
      "flight_numbers": [
-      "IZ 743"
+      "IZ 741"
      ],
      "aircraft": "Airbus A320",
-     "price": 675.0,
+     "price": 620.0,
      "currency": "ILS",
      "seller": null,
      "seller_is_airline": null,
@@ -71,7 +74,10 @@
        "Ticket changes for a fee"
       ]
      },
-     "checked_at": "2026-11-26T21:12:53+00:00"
+     "checked_at": "2026-11-26T21:12:53+00:00",
+     "verified_at": "2026-11-26T21:15:40.221904+00:00",
+     "google_price": 620.0,
+     "check_on_site": true
     },
     "ret": {
      "id": "IZ 742|2027-06-09T16:00",
@@ -104,34 +110,38 @@
        "Ticket changes for a fee"
       ]
      },
-     "checked_at": "2026-11-26T21:12:53+00:00"
+     "checked_at": "2026-11-26T21:12:53+00:00",
+     "check_on_site": true
     }
    },
    "options": [
     {
      "dest": "CDG",
-     "days": 4,
-     "nights": 3,
+     "days": 3,
+     "nights": 2,
      "in_range": true,
-     "price_pp": 1344,
+     "price_pp": 1289,
      "verified": false,
+     "check_site": [
+      "Arkia"
+     ],
      "out": {
-      "id": "IZ 743|2027-06-06T16:30",
+      "id": "IZ 741|2027-06-07T10:30",
       "provider": "serpapi",
       "dep": "TLV",
       "arr": "CDG",
-      "dep_local": "2027-06-06T16:30",
-      "arr_local": "2027-06-06T20:30",
-      "dep_utc": "2027-06-06T13:30:00+00:00",
-      "arr_utc": "2027-06-06T18:30:00+00:00",
+      "dep_local": "2027-06-07T10:30",
+      "arr_local": "2027-06-07T14:30",
+      "dep_utc": "2027-06-07T07:30:00+00:00",
+      "arr_utc": "2027-06-07T12:30:00+00:00",
       "duration_min": 300,
       "airline": "Arkia",
       "airline_code": "IZ",
       "flight_numbers": [
-       "IZ 743"
+       "IZ 741"
       ],
       "aircraft": "Airbus A320",
-      "price": 675.0,
+      "price": 620.0,
       "currency": "ILS",
       "seller": null,
       "seller_is_airline": null,
@@ -146,7 +156,10 @@
         "Ticket changes for a fee"
        ]
       },
-      "checked_at": "2026-11-26T21:12:53+00:00"
+      "checked_at": "2026-11-26T21:12:53+00:00",
+      "verified_at": "2026-11-26T21:15:40.221904+00:00",
+      "google_price": 620.0,
+      "check_on_site": true
      },
      "ret": {
       "id": "IZ 742|2027-06-09T16:00",
@@ -179,33 +192,37 @@
         "Ticket changes for a fee"
        ]
       },
-      "checked_at": "2026-11-26T21:12:53+00:00"
+      "checked_at": "2026-11-26T21:12:53+00:00",
+      "check_on_site": true
      }
     },
     {
      "dest": "CDG",
-     "days": 3,
-     "nights": 2,
+     "days": 4,
+     "nights": 3,
      "in_range": true,
-     "price_pp": 1469,
+     "price_pp": 1344,
      "verified": false,
+     "check_site": [
+      "Arkia"
+     ],
      "out": {
-      "id": "IZ 741|2027-06-01T10:30",
+      "id": "IZ 743|2027-06-06T16:30",
       "provider": "serpapi",
       "dep": "TLV",
       "arr": "CDG",
-      "dep_local": "2027-06-01T10:30",
-      "arr_local": "2027-06-01T14:30",
-      "dep_utc": "2027-06-01T07:30:00+00:00",
-      "arr_utc": "2027-06-01T12:30:00+00:00",
+      "dep_local": "2027-06-06T16:30",
+      "arr_local": "2027-06-06T20:30",
+      "dep_utc": "2027-06-06T13:30:00+00:00",
+      "arr_utc": "2027-06-06T18:30:00+00:00",
       "duration_min": 300,
       "airline": "Arkia",
       "airline_code": "IZ",
       "flight_numbers": [
-       "IZ 741"
+       "IZ 743"
       ],
       "aircraft": "Airbus A320",
-      "price": 527.0,
+      "price": 675.0,
       "currency": "ILS",
       "seller": null,
       "seller_is_airline": null,
@@ -220,17 +237,18 @@
         "Ticket changes for a fee"
        ]
       },
-      "checked_at": "2026-11-26T21:12:53+00:00"
+      "checked_at": "2026-11-26T21:12:53+00:00",
+      "check_on_site": true
      },
      "ret": {
-      "id": "IZ 742|2027-06-03T16:00",
+      "id": "IZ 742|2027-06-09T16:00",
       "provider": "serpapi",
       "dep": "CDG",
       "arr": "TLV",
-      "dep_local": "2027-06-03T16:00",
-      "arr_local": "2027-06-03T21:45",
-      "dep_utc": "2027-06-03T14:00:00+00:00",
-      "arr_utc": "2027-06-03T18:45:00+00:00",
+      "dep_local": "2027-06-09T16:00",
+      "arr_local": "2027-06-09T21:45",
+      "dep_utc": "2027-06-09T14:00:00+00:00",
+      "arr_utc": "2027-06-09T18:45:00+00:00",
       "duration_min": 285,
       "airline": "Arkia",
       "airline_code": "IZ",
@@ -238,7 +256,7 @@
        "IZ 742"
       ],
       "aircraft": "Airbus A320",
-      "price": 942.0,
+      "price": 669.0,
       "currency": "ILS",
       "seller": null,
       "seller_is_airline": null,
@@ -253,7 +271,8 @@
         "Ticket changes for a fee"
        ]
       },
-      "checked_at": "2026-11-26T21:12:53+00:00"
+      "checked_at": "2026-11-26T21:12:53+00:00",
+      "check_on_site": true
      }
     }
    ],

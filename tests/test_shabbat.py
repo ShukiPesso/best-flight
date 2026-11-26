@@ -69,3 +69,17 @@ def test_saturday_night_departure():
 def test_flight_during_shabbat_blocked():
     cal = _cal({"TLV": FRI, "ATH": FRI})
     assert cal.leg_problem("TLV", "ATH", t("2027-05-01T11:00:00+03:00"), t("2027-05-01T13:00:00+03:00"))
+
+
+def test_unverifiable_airlines_learned_and_marked():
+    from flightscan.scan import mark_unverifiable, unverifiable_airlines
+    state = {"stats": {"noairline|IZ": {"n": 2, "hits": 0}, "noairline|LY": {"n": 1, "hits": 0}},
+             "legs": {"out|CDG|2027-06-01": {"options": {
+                 "a": {"airline_code": "IZ", "seller_is_airline": False},
+                 "b": {"airline_code": "LY", "seller_is_airline": None}}}}}
+    codes = unverifiable_airlines({"unverifiable_airlines": ["6H"]}, state)
+    assert codes == {"IZ", "6H"}
+    mark_unverifiable(state, codes)
+    opts = state["legs"]["out|CDG|2027-06-01"]["options"]
+    assert opts["a"]["check_on_site"] and opts["a"]["seller_is_airline"] is None
+    assert "check_on_site" not in opts["b"]

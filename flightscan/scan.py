@@ -183,6 +183,28 @@ def store_legs(state, k, provider_name, legs, now) -> None:
 # --------------------------------------------------------------------------
 # combining into round trips
 # --------------------------------------------------------------------------
+def unverifiable_airlines(cfg, state) -> set[str]:
+    """Airlines that Google never lists as their own seller (e.g. Arkia).
+
+    Seeded from config and learned: two failed airline-seller checks for the
+    same airline put it on the list, so no more searches are spent on it.
+    """
+    codes = set(cfg.get("unverifiable_airlines") or [])
+    for k, v in state["stats"].items():
+        if k.startswith("noairline|") and v.get("n", 0) >= 2:
+            codes.add(k.split("|", 1)[1])
+    return codes
+
+
+def mark_unverifiable(state, codes: set[str]) -> None:
+    for entry in state["legs"].values():
+        for leg in entry["options"].values():
+            if leg.get("airline_code") in codes:
+                leg["check_on_site"] = True
+                if leg.get("seller_is_airline") is False:
+                    leg["seller_is_airline"] = None  # show it, with a warning
+
+
 def _usable(leg, cal, now, max_age_days) -> bool:
     if leg.get("seller_is_airline") is False:
         return False
@@ -239,6 +261,8 @@ def combine(cfg, state, cal, today, now) -> dict[str, list[dict]]:
                             "price_pp": round(o["price"] + r["price"]),
                             "verified": o.get("seller_is_airline") is True
                                         and r.get("seller_is_airline") is True,
+                            "check_site": sorted({l["airline"] for l in (o, r)
+                                                  if l.get("check_on_site")}),
                             "out": o, "ret": r,
                         })
         in_range = [t for t in trips if t["in_range"]]
@@ -251,7 +275,7 @@ def combine(cfg, state, cal, today, now) -> dict[str, list[dict]]:
     return result
 
 
-def verify_candidates(cfg, providers, combined) -> bool:
+def verify_candidates(cfg, providers, combined, state=None) -> bool:
     """Verify (seller == airline) the legs of the top trips. Returns True if
     anything changed so the caller can recombine."""
     v = next((p for p in providers if p.name == "serpapi"), None)
@@ -262,7 +286,8 @@ def verify_candidates(cfg, providers, combined) -> bool:
     for dest, trips in combined.items():
         for t in trips[:k]:
             for leg in (t["out"], t["ret"]):
-                if leg["provider"] != "serpapi" or leg.get("seller_is_airline") is not None:
+                if (leg["provider"] != "serpapi" or leg.get("seller_is_airline") is not None
+                        or leg.get("check_on_site")):
                     continue
                 if not v.can_verify():
                     return changed
@@ -278,6 +303,8 @@ def verify_candidates(cfg, providers, combined) -> bool:
                 leg["google_price"] = leg["price"]
                 if res.get("no_airline_offer"):
                     leg["seller_is_airline"] = False
+                    if state is not None and leg.get("airline_code"):
+                        _bump(state, f"noairline|{leg['airline_code']}", False)
                 else:
                     leg.update(price=res["price"], seller=res["seller"], seller_is_airline=True,
                                fare_name=res.get("fare_name"), bags=res["bags"],
@@ -387,10 +414,12 @@ def main(argv=None) -> int:
     for p in providers:
         run_searches(cfg, p, tasks, state, now)
 
+    mark_unverifiable(state, unverifiable_airlines(cfg, state))
     combined = combine(cfg, state, cal, today, now)
     for _ in range(4):
-        if not verify_candidates(cfg, providers, combined):
+        if not verify_candidates(cfg, providers, combined, state):
             break
+        mark_unverifiable(state, unverifiable_airlines(cfg, state))
         combined = combine(cfg, state, cal, today, now)
 
     out = build_output(cfg, combined, tasks, state, now, providers, args.demo)

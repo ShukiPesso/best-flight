@@ -49,10 +49,18 @@ def key(direction: str, dest: str, day: dt.date) -> str:
     return f"{direction}|{dest}|{day.isoformat()}"
 
 
-def prune(state: dict, today: dt.date) -> None:
+def prune(state: dict, today: dt.date, destinations: list[str]) -> None:
     for k in list(state["legs"]):
-        if dt.date.fromisoformat(k.split("|")[2]) < today:
+        _, dest, day = k.split("|")
+        if dt.date.fromisoformat(day) < today or dest not in destinations:
             del state["legs"][k]
+
+
+def add_months(d: dt.date, months: int) -> dt.date:
+    y, m = divmod(d.month - 1 + months, 12)
+    y, m = d.year + y, m + 1
+    last_day = (dt.date(y + (m == 12), m % 12 + 1, 1) - dt.timedelta(days=1)).day
+    return dt.date(y, m, min(d.day, last_day))
 
 
 # --------------------------------------------------------------------------
@@ -64,6 +72,9 @@ def departure_window(cfg, today: dt.date) -> tuple[dt.date, dt.date]:
     earliest = today + dt.timedelta(days=2)
     if w.get("from") and w.get("to"):
         first, last = dt.date.fromisoformat(str(w["from"])), dt.date.fromisoformat(str(w["to"]))
+    elif w.get("start_after_months") is not None:
+        first = add_months(today, int(w["start_after_months"]))
+        last = add_months(today, int(w["start_after_months"]) + int(w.get("length_months", 1)))
     else:
         first = today + dt.timedelta(days=int(w.get("start_after_days", 2)))
         last = first + dt.timedelta(days=int(w.get("length_days", 90)) - 1)
@@ -362,10 +373,14 @@ def main(argv=None) -> int:
     if args.search_budget is not None:
         for p in providers:
             p.search_budget = args.search_budget
+    else:
+        for p in providers:
+            if hasattr(p, "auto_budget"):
+                p.auto_budget(today)
     end = last + dt.timedelta(days=cfg["trip_days"]["flex_max"])
     cal = ShabbatCalendar(cfg, first, end, cache_dir=ROOT / "data" / "cache")
     state = load_state(state_path)
-    prune(state, today)
+    prune(state, today, cfg["destinations"])
 
     tasks = build_tasks(cfg, cal, today)
     log.info("%d searchable (destination, direction, date) slots", len(tasks))

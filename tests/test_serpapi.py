@@ -31,6 +31,9 @@ class R:
     def json(self):
         return self._j
 
+    def raise_for_status(self):
+        pass
+
 
 def test_search_and_verify(monkeypatch):
     monkeypatch.setenv("SERPAPI_KEY", "x")
@@ -52,3 +55,20 @@ def test_search_and_verify(monkeypatch):
     assert res["price"] == 340 and res["seller"] == "Wizz Air"  # agency price ignored
     assert res["fare_name"] == "Basic" and len(res["fares"]) == 2
     assert res["bags"]["carry_on"] is True and res["bags"]["checked"] is False
+
+
+def test_auto_budget_spreads_quota(monkeypatch):
+    monkeypatch.setenv("SERPAPI_KEY", "x")
+    monkeypatch.setattr(sp.requests, "get", lambda url, params, timeout: R(
+        {"plan_renewal_date": "2026-12-23", "total_searches_left": 115}))
+    p = sp.SerpApiProvider({"auto_budget": True, "reserve": 3, "daily_verify_budget": 1}, "ILS")
+    p.auto_budget(dt.date(2026, 11, 26))
+    # (115 - 3) // 28 runs = 4 -> 3 searches + 1 verify
+    assert (p.search_budget, p.verify_budget) == (3, 1)
+
+
+def test_auto_budget_off_keeps_config(monkeypatch):
+    monkeypatch.setenv("SERPAPI_KEY", "x")
+    p = sp.SerpApiProvider({"daily_search_budget": 6, "daily_verify_budget": 2}, "ILS")
+    p.auto_budget(dt.date(2026, 11, 26))
+    assert (p.search_budget, p.verify_budget) == (6, 2)

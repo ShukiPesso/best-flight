@@ -8,6 +8,7 @@ which also returns the fare name and baggage rules.
 from __future__ import annotations
 
 import datetime as dt
+import logging
 import os
 
 import requests
@@ -16,6 +17,7 @@ from ..models import make_leg, parse_bag_texts, empty_bags
 from .base import Provider, ProviderError
 
 URL = "https://serpapi.com/search.json"
+log = logging.getLogger("flightscan")
 
 
 def _code(flight_number: str) -> str | None:
@@ -35,6 +37,40 @@ class SerpApiProvider(Provider):
     @classmethod
     def available(cls) -> bool:
         return bool(os.environ.get("SERPAPI_KEY"))
+
+    def auto_budget(self, today: dt.date) -> None:
+        """Spread the plan's remaining searches evenly until the renewal date.
+
+        Uses SerpApi's free Account API (does not count as a search). The
+        configured daily budgets become caps only when auto_budget is off.
+        """
+        if not self.cfg.get("auto_budget"):
+            return
+        try:
+            r = requests.get("https://serpapi.com/account.json",
+                             params={"api_key": self.key}, timeout=30)
+            r.raise_for_status()
+            acc = r.json()
+        except (requests.RequestException, ValueError) as e:
+            log.warning("SerpApi account lookup failed (%s); using configured budgets", e)
+            return
+        left = int(acc.get("total_searches_left") or acc.get("plan_searches_left") or 0)
+        renewal = acc.get("plan_renewal_date")
+        if renewal:
+            reset = dt.date.fromisoformat(renewal)
+        else:  # fall back to the configured day of month
+            day = int(self.cfg.get("quota_reset_day", 1))
+            reset = today.replace(day=min(day, 28))
+            if reset <= today:
+                reset = (reset.replace(day=1) + dt.timedelta(days=32)).replace(day=min(day, 28))
+        # runs left in this cycle, counting the renewal day itself to be safe
+        runs = max(1, (reset - today).days + 1)
+        usable = max(0, left - int(self.cfg.get("reserve", 3)))
+        total = usable // runs
+        self.verify_budget = min(int(self.cfg.get("daily_verify_budget", 1)), total // 4)
+        self.search_budget = total - self.verify_budget
+        log.info("SerpApi quota: %d left, renewal %s, %d runs -> %d searches + %d verifies today",
+                 left, reset, runs, self.search_budget, self.verify_budget)
 
     def _get(self, params: dict) -> dict:
         params = {"engine": "google_flights", "api_key": self.key, "hl": "en", "gl": "il",

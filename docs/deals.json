@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T21:12:53+00:00",
+ "generated_at": "2026-11-27T12:55:21+00:00",
  "demo": false,
  "currency": "ILS",
  "family_size": 5,
@@ -11,8 +11,8 @@
   "flex_min_saving_pct": 15
  },
  "window": [
-  "2027-05-26",
-  "2027-06-26"
+  "2027-05-27",
+  "2027-06-27"
  ],
  "shabbat": {
   "arrive_before_candles_hours": 3,
@@ -24,8 +24,8 @@
  "providers": [
   {
    "name": "serpapi",
-   "searches": 54,
-   "verifies": 1
+   "searches": 2,
+   "verifies": 0
   }
  ],
  "destinations": [

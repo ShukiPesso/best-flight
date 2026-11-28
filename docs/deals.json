@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T12:55:21+00:00",
+ "generated_at": "2026-11-28T12:07:46+00:00",
  "demo": false,
  "currency": "ILS",
  "family_size": 5,
@@ -11,8 +11,8 @@
   "flex_min_saving_pct": 15
  },
  "window": [
-  "2027-05-27",
-  "2027-06-27"
+  "2027-05-28",
+  "2027-06-28"
  ],
  "shabbat": {
   "arrive_before_candles_hours": 3,
